@@ -1,0 +1,19 @@
+version: '3'
+services:
+  elweb:
+    build:
+      context: .
+    ports:
+      - 6006:6006
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./stories:/usr/src/app/stories
+      - /usr/src/app/node_modules
+  elwebtests:
+    build:
+      context: .
+    ports:
+      - 8008:8008
+    volumes:
+      - ./src:/usr/src/app/src
+    command: ["npm", "run", "test:watch"]
