@@ -7,7 +7,7 @@ Just Another React Js Components Library.
 To use this library in your project, just install it using npm and the repository url.
 
 ```bash
-$ npm install git+ssh://git@bitbucket.org/NewWaveWeb/el-web.git#master --save
+$ npm install git+https://bitbucket.org/NewWaveWeb/el-web.git#1.0.0 --save
 ```
 
 Then, import the components that you want to use:
