@@ -7,7 +7,7 @@ Just Another React Js Components Library.
 To use this library in your project, just install it using npm and the repository url.
 
 ```js
-npm install NewWaveWeb/el-web#master
+npm install git@bitbucket.org:NewWaveWeb/el-web.git#master
 ```
 
 Then, import the components that you want to use:
@@ -17,6 +17,12 @@ Then, import the components that you want to use:
 ```
 
 # How to Contribute
+
+## Clone this repository
+
+``` bash
+$ git clone git@bitbucket.org:NewWaveWeb/el-web.git
+```
 
 ## Running the application with docker
 ### 1. Install Docker
@@ -30,9 +36,8 @@ Docker version 17.03.0-ce, build 60ccb22
 
 ### 2. Build the application
 
-Run:
-
 ``` bash
+$ cd el-web/
 $ docker-compose build
 ```
 
@@ -47,7 +52,51 @@ $ docker-compose up
 When the application loads, it automatically runs the tests inside the container with the --watchAll flag. But, if for some reason you want to run them manually, you can use this command:
 
 ``` bash
-docker exec -ti CONTAINER_NAME bash -c 'npm test'
+$ docker exec -ti CONTAINER_NAME bash -c 'npm test'
+```
+
+## Running the application locally
+
+### 1. Install the dependencies
+
+``` bash
+$ npm install
+```
+
+### 2. Running Storybook
+
+``` bash
+$ npm run storybook
+```
+
+This command will show a storybook instance at: [http://localhost:6006](http://localhost:6006).
+
+### 3. Running Tests
+
+``` bash
+$ npm test
+```
+
+To update the snapshots:
+``` bash
+$ npm test -- -u
+```
+
+To watch the test suite:
+``` bash
+$ npm run test:watch
+```
+
+### 4. Building the app to publish
+
+``` bash
+$ npm run prepublish
+```
+
+or:
+
+``` bash
+$ npm run build
 ```
 
 ## Structure of the Components Directory
@@ -68,7 +117,7 @@ src/
 
 ## Storybook
 
-This project has configured a [storybook](https://storybook.js.org/). If you run the application as discribed in [step 3](#3.-running-the-application), you will have an intereactive storybook and ready to use at: [http://localhost:6006](http://localhost:6006)
+This project has configured a [storybook](https://storybook.js.org/). If you run the application as discribed in [step 3](#3.-running-the-application), you will have an intereactive storybook and ready to use at: [http://localhost:6006](http://localhost:6006).
 
 If you want to add an story to the storybook, you can add it in the stories/ folder at the root of this repository.
 
