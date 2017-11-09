@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Just Another React Js Components Library.",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "babel src -d build --ignore '**/*.test.js'",
-    "build:watch": "babel src -w -d build",
+    "build": "babel src -d dist --ignore '**/*.test.js'",
+    "build:watch": "babel src -w -d dist",
     "lint": "eslint src/**; exit 0",
     "lint:watch": "esw -w src/**",
     "prepublish": "npm run build",
@@ -65,9 +65,6 @@
     "snapshotSerializers": [
       "../node_modules/jest-serializer-enzyme"
     ],
-    "setupTestFrameworkScriptFile": "../node_modules/jest-enzyme/lib/index.js",
-    "transformIgnorePatterns": [
-      "node_modules/(?!react-native)"
-    ]
+    "setupTestFrameworkScriptFile": "../node_modules/jest-enzyme/lib/index.js"
   }
 }

@@ -8,7 +8,6 @@ services:
     volumes:
       - ./src:/usr/src/app/src
       - ./stories:/usr/src/app/stories
-      - /usr/src/app/node_modules
   elwebtests:
     build:
       context: .
