@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Title from './index';
+import Title from './Title';
 
 describe('Snapshots', () => {
   it('should match snapshot of Title', () => {
