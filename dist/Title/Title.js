@@ -21,13 +21,9 @@ var propTypes = {
 var Title = function Title(_ref) {
   var text = _ref.text;
   return _react2.default.createElement(
-    'div',
-    { className: 'row' },
-    _react2.default.createElement(
-      'h1',
-      null,
-      text
-    )
+    'h1',
+    null,
+    text
   );
 };
 

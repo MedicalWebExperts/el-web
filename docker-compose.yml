@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   elweb:
     build:
@@ -8,6 +9,7 @@ services:
     volumes:
       - ./src:/usr/src/app/src
       - ./stories:/usr/src/app/stories
+
   elwebtests:
     build:
       context: .
