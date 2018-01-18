@@ -1,10 +1,10 @@
 export default {
   colors: {
-    default: 'green',
-    primary: 'red',
+    default: 'red',
+    primary: 'green',
     secondary: 'blue',
   },
   fonts: {
-    baseSize: 10,
+    baseSize: 16,
   },
 };

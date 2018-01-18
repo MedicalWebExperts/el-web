@@ -23,10 +23,10 @@ storiesOf('Grid', module).add('default', () => (
 storiesOf('Typography', module).add('Headlines', () => (
   <ThemeProvider theme={DefaultTheme}>
     <div>
-      <H1 text="Headline 1" color="primary" />
-      <H2 text="Headline 2" />
+      <H1 text="Headline 1" />
+      <H2 text="Headline 2" color="primary" />
       <H3 text="Headline 3" />
-      <H4 text="Headline 4" />
+      <H4 text="Headline 4" color="secondary" />
       <H5 text="Headline 5" />
     </div>
   </ThemeProvider>

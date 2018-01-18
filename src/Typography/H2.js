@@ -4,11 +4,11 @@ import injectSheet from 'react-jss';
 
 const propTypes = {
   text: PropTypes.string.isRequired,
-  color: PropTypes.oneOf(['primary', 'secondary']),
+  color: PropTypes.oneOf(['primary', 'secondary', 'default']),
 };
 
 const defaultProps = {
-  color: 'primary',
+  color: 'default',
 };
 
 const styles = theme => ({
