@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   isFluid: PropTypes.bool,
 };
 
 const defaultProps = {
-  children: '',
   isFluid: false,
 };
 
