@@ -16,6 +16,12 @@ Then, import the components that you want to use:
   import { Title } from 'el-web';
 ```
 
+
+### Misc
+
+- [Jira Task](https://newwaveweb.atlassian.net/browse/MIW-894)
+
+
 # How to Contribute
 
 ## Clone this repository
