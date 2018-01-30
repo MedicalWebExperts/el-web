@@ -1,10 +1,15 @@
-import Grid from './Grid/Grid';
-import Row from './Row/Row';
-import Col from './Col/Col';
-import { H1, H2, H3, H4, H5, H6 } from './Typography';
+import Grid from './components/Grid/Grid';
+import Row from './components/Row/Row';
+import Col from './components/Col/Col';
+import { H1, H2, H3, H4, H5, H6 } from './components/Typography';
+
+import { ThemeProvider, withTheme, DefaultTheme } from './theme';
 
 
 module.exports = {
+  ThemeProvider,
+  withTheme,
+  DefaultTheme,
   Grid,
   Row,
   Col,
