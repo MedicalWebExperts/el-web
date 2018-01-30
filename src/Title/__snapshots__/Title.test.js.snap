@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Snapshots should match snapshot of Title 1`] = `
-<h1>
-  Hello World
-</h1>
-`;

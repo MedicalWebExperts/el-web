@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:8.9
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -12,4 +12,5 @@ RUN npm install
 RUN npm run build
 
 EXPOSE 6006
+
 CMD ["npm", "run", "storybook"]
