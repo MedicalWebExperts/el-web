@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component H1 Snapshot primary color of the theme 1`] = `
+<h1
+  className="jsx-2310562709"
+>
+  Heading 1
+</h1>
+`;
+
+exports[`Component H1 Snapshot secondary font-family of the theme 1`] = `
+<h1
+  className="jsx-2537203115"
+>
+  Heading 1
+</h1>
+`;
+
+exports[`Component H1 Snapshot without arguments, take the default values 1`] = `
+<h1
+  className="jsx-709745237"
+>
+  Heading 1
+</h1>
+`;

@@ -1,30 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from '../../theme';
+import { withTheme } from '../../../theme';
 
 const propTypes = {
   text: PropTypes.string.isRequired,
+  secondary: PropTypes.bool,
   color: PropTypes.oneOf(['primary', 'secondary', 'default']),
   theme: PropTypes.shape({}).isRequired,
 };
 
 const defaultProps = {
   color: 'default',
+  secondary: false,
 };
 
-const H1 = ({ text, theme, color }) => (
-  <h1>
+const H6 = ({
+  text,
+  theme,
+  color,
+  secondary,
+}) => (
+  <h6>
     <style jsx>{`
-      h1 {
+      h6 {
         color: ${theme.colors[color]}
+        font-family: ${secondary ? theme.font.secondary : theme.font.primary}
       }
     `}
     </style>
     {text}
-  </h1>
+  </h6>
 );
 
-H1.propTypes = propTypes;
-H1.defaultProps = defaultProps;
+H6.propTypes = propTypes;
+H6.defaultProps = defaultProps;
 
-export default withTheme(H1);
+export default withTheme(H6);

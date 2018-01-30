@@ -4,4 +4,8 @@ export default {
     secondary: '#00b33c',
     default: '#000000',
   },
+  font: {
+    primary: 'Georgia, serif',
+    secondary: 'sans-serif',
+  },
 };

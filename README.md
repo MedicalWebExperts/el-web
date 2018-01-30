@@ -53,12 +53,33 @@ $ docker-compose build
 $ docker-compose up
 ```
 
-### Running tests
+#### Running tests
 
 When the application loads, it automatically runs the tests inside the container with the --watchAll flag. But, if for some reason you want to run them manually, you can use this command:
 
 ``` bash
-$ docker exec -ti CONTAINER_NAME bash -c 'npm test'
+$ docker-compose run elweb npm test
+```
+
+To update the snapshots:
+``` bash
+$ docker-compose run elweb npm test -- -u
+```
+
+To watch the test suite:
+``` bash
+$ docker-compose run elweb npm run test:watch
+```
+#### Building the app to publish
+
+``` bash
+$ docker-compose run elweb npm run prepublish
+```
+
+or:
+
+``` bash
+$ docker-compose run elweb npm run build
 ```
 
 ## Running the application locally

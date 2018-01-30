@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Text Snapshot primary color of the theme 1`] = `
+<p
+  className="jsx-395920955"
+>
+  This is a component Text!
+</p>
+`;
+
+exports[`Component Text Snapshot secondary font-family of the theme 1`] = `
+<p
+  className="jsx-440853637"
+>
+  This is a component Text!
+</p>
+`;
+
+exports[`Component Text Snapshot use align prop with value right 1`] = `
+<p
+  className="jsx-32005758"
+>
+  This is a component Text!
+</p>
+`;
+
+exports[`Component Text Snapshot use gutterBottom prop 1`] = `
+<p
+  className="jsx-3903326633"
+>
+  This is a component Text!
+</p>
+`;
+
+exports[`Component Text Snapshot use gutterBottom prop and secondary color 1`] = `
+<p
+  className="jsx-660067240"
+>
+  This is a component Text!
+</p>
+`;
+
+exports[`Component Text Snapshot use gutterBottom prop and secondary font 1`] = `
+<p
+  className="jsx-997711959"
+>
+  This is a component Text!
+</p>
+`;
+
+exports[`Component Text Snapshot use gutterBottom prop, secondary font and align 1`] = `
+<p
+  className="jsx-3149066066"
+>
+  This is a component Text!
+</p>
+`;
+
+exports[`Component Text Snapshot without arguments, take the default values, use childreen prop 1`] = `
+<p
+  className="jsx-3729570811"
+>
+  This is a component Text!
+</p>
+`;
