@@ -2,28 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-  children: PropTypes.node,
-};
-
-const defaultProps = {
-  children: '',
+  children: PropTypes.node.isRequired,
 };
 
 const Row = ({ children }) => (
-  <div className="row">
-    <style jsx>{`
-      .row {
-        flex-wrap: wrap;
-        flex-direction: row;
-        display: flex;
-      }
-    `}
-    </style>
+  <div>
     {children}
   </div>
 );
 
 Row.propTypes = propTypes;
-Row.defaultProps = defaultProps;
 
 export default Row;

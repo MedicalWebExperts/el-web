@@ -1,12 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { ThemeProvider } from 'react-jss';
 
-import { Title, Grid, Row, Col, H1, H2, H3, H4, H5 } from '../src';
+import { Grid, Row, Col, H1 } from '../src';
 
-import DefaultTheme from '../src/theme/default';
 
-storiesOf('Title', module).add('default', () => <Title text="Hello World!" />);
 storiesOf('Grid', module).add('default', () => (
   <Grid>
     <Row>
@@ -20,14 +17,6 @@ storiesOf('Grid', module).add('default', () => (
   </Grid>
 ));
 
-storiesOf('Typography', module).add('Headlines', () => (
-  <ThemeProvider theme={DefaultTheme}>
-    <div>
-      <H1 text="Headline 1" />
-      <H2 text="Headline 2" color="primary" />
-      <H3 text="Headline 3" />
-      <H4 text="Headline 4" color="secondary" />
-      <H5 text="Headline 5" />
-    </div>
-  </ThemeProvider>
+storiesOf('Typography', module).add('H1', () => (
+  <H1 text="Heading 1" />
 ));

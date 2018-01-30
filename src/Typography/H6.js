@@ -5,7 +5,10 @@ const propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-const Title = ({ text }) => (<h1>{text}</h1>);
+const H6 = ({ text }) => (
+  <h1>{text}</h1>
+);
 
-Title.propTypes = propTypes;
-export default Title;
+H6.propTypes = propTypes;
+
+export default H6;
