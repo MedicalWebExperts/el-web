@@ -6,11 +6,11 @@ const propTypes = {
   children: PropTypes.node,
   text: PropTypes.string,
   color: PropTypes.oneOf(['primary', 'secondary', 'default']),
-  gutterBottom: PropTypes.number,
   align: PropTypes.oneOf(['left', 'right', 'center', 'inherit', 'justify']),
   noWrap: PropTypes.bool,
   secondary: PropTypes.bool,
   theme: PropTypes.shape({}).isRequired,
+  styles: PropTypes.shape({}),
 };
 
 const defaultProps = {
@@ -18,29 +18,32 @@ const defaultProps = {
   text: '',
   color: 'default',
   align: 'inherit',
-  gutterBottom: 0,
   noWrap: false,
   secondary: false,
+  styles: {},
 };
 
 const Text = ({
   children,
   text,
   color,
-  gutterBottom,
   align,
   noWrap,
   secondary,
   theme,
+  styles,
 }) => (
-  <p>
+  <p style={styles}>
     <style jsx>{`
       p {
         color: ${theme.colors[color]}
         text-align: ${align}
         font-family: ${secondary ? theme.font.secondary : theme.font.primary}
         white-space: ${noWrap ? 'nowrap' : 'normal'}
-        line-height: ${gutterBottom}
+        font-size: ${theme.font.size}px
+        line-height: ${theme.font.size / 10}
+        margin-top: 0
+        margin-bottom: ${theme.spacing}px
       }
     `}
     </style>

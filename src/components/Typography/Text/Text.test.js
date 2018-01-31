@@ -57,4 +57,16 @@ describe('Component Text Snapshot', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('added optional style inline prop', () => {
+    const myStyles = {
+      marginTop: 30,
+      lineHeight: 2,
+    };
+    const tree = renderer
+      /* eslint-disable */
+      .create(<ThemeProvider><Text styles={myStyles}>This is a component Text!</Text></ThemeProvider>)
+      /* eslint-enable */
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

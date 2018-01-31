@@ -1,8 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Component H3 Snapshot added optional style inline prop 1`] = `
+<h3
+  className="jsx-1190462014"
+  style={
+    Object {
+      "lineHeight": 2,
+      "marginTop": 30,
+    }
+  }
+>
+  Heading 1
+</h3>
+`;
+
 exports[`Component H3 Snapshot primary color of the theme 1`] = `
 <h3
-  className="jsx-1401097368"
+  className="jsx-713538942"
+  style={Object {}}
 >
   Heading 3
 </h3>
@@ -10,7 +25,8 @@ exports[`Component H3 Snapshot primary color of the theme 1`] = `
 
 exports[`Component H3 Snapshot secondary font-family of the theme 1`] = `
 <h3
-  className="jsx-2454431142"
+  className="jsx-2071107651"
+  style={Object {}}
 >
   Heading 3
 </h3>
@@ -18,7 +34,8 @@ exports[`Component H3 Snapshot secondary font-family of the theme 1`] = `
 
 exports[`Component H3 Snapshot without arguments, take the default values 1`] = `
 <h3
-  className="jsx-4095247192"
+  className="jsx-1190462014"
+  style={Object {}}
 >
   Heading 3
 </h3>

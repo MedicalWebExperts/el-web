@@ -1,11 +1,13 @@
+import colors from './colors';
+import typography from './components/Typography';
+
 export default {
-  colors: {
-    primary: '#0000ff',
-    secondary: '#00b33c',
-    default: '#000000',
-  },
   font: {
-    primary: 'Georgia, serif',
-    secondary: 'sans-serif',
+    size: 16,
+    primary: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    secondary: 'Georgia, "Times New Roman", Times, serif',
   },
+  spacing: 25,
+  typography,
+  colors,
 };

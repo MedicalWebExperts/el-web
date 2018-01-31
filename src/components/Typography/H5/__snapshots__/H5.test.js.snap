@@ -1,8 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Component H5 Snapshot added optional style inline prop 1`] = `
+<h5
+  className="jsx-2179476999"
+  style={
+    Object {
+      "lineHeight": 2,
+      "marginTop": 30,
+    }
+  }
+>
+  Heading 1
+</h5>
+`;
+
 exports[`Component H5 Snapshot primary color of the theme 1`] = `
 <h5
-  className="jsx-798444019"
+  className="jsx-3045893191"
+  style={Object {}}
 >
   Heading 5
 </h5>
@@ -10,7 +25,8 @@ exports[`Component H5 Snapshot primary color of the theme 1`] = `
 
 exports[`Component H5 Snapshot secondary font-family of the theme 1`] = `
 <h5
-  className="jsx-626016141"
+  className="jsx-1647675642"
+  style={Object {}}
 >
   Heading 5
 </h5>
@@ -18,7 +34,8 @@ exports[`Component H5 Snapshot secondary font-family of the theme 1`] = `
 
 exports[`Component H5 Snapshot without arguments, take the default values 1`] = `
 <h5
-  className="jsx-3492593843"
+  className="jsx-2179476999"
+  style={Object {}}
 >
   Heading 5
 </h5>

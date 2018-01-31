@@ -21,7 +21,7 @@ storiesOf('Grid', module).add('default', () => (
 storiesOf('Typography', module).add('Headings', () => (
   <ThemeProvider>
     <div>
-      <H1 text="Heading 1" secondary />
+      <H1 text="Heading 1" />
       <H2 text="Heading 2" color="primary" />
       <H3 text="Heading 3" />
       <H4 text="Heading 4" color="secondary" secondary />

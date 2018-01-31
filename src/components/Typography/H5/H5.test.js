@@ -23,4 +23,14 @@ describe('Component H5 Snapshot', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('added optional style inline prop', () => {
+    const myStyles = {
+      marginTop: 30,
+      lineHeight: 2,
+    };
+    const tree = renderer
+      .create(<ThemeProvider><H5 text="Heading 1" styles={myStyles} /></ThemeProvider>)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
