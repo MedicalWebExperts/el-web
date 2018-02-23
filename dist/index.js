@@ -1,26 +1,35 @@
 'use strict';
 
-var _Title = require('./Title/Title');
-
-var _Title2 = _interopRequireDefault(_Title);
-
-var _Grid = require('./Grid/Grid');
+var _Grid = require('./components/Grid/Grid');
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
-var _Row = require('./Row/Row');
+var _Row = require('./components/Row/Row');
 
 var _Row2 = _interopRequireDefault(_Row);
 
-var _Col = require('./Col/Col');
+var _Col = require('./components/Col/Col');
 
 var _Col2 = _interopRequireDefault(_Col);
+
+var _Typography = require('./components/Typography');
+
+var _theme = require('./theme');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = {
-  Title: _Title2.default,
+  ThemeProvider: _theme.ThemeProvider,
+  withTheme: _theme.withTheme,
+  DefaultTheme: _theme.DefaultTheme,
   Grid: _Grid2.default,
   Row: _Row2.default,
-  Col: _Col2.default
+  Col: _Col2.default,
+  H1: _Typography.H1,
+  H2: _Typography.H2,
+  H3: _Typography.H3,
+  H4: _Typography.H4,
+  H5: _Typography.H5,
+  H6: _Typography.H6,
+  Text: _Typography.Text
 };

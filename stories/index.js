@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { ThemeProvider, Grid, Row, Col, H1, H2, H3, H4, H5, H6 } from '../src';
+import { ThemeProvider, Grid, Row, Col, H1, H2, H3, H4, H5, H6, Button } from '../src';
 import Text from '../src/components/Typography/Text/Text';
 
 
@@ -34,5 +34,17 @@ storiesOf('Typography', module).add('Headings', () => (
 storiesOf('Typography', module).add('Text', () => (
   <ThemeProvider>
     <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Text>
+  </ThemeProvider>
+));
+
+storiesOf('Button', module).add('Default', () => (
+  <ThemeProvider>
+    <Button text="Default" />
+  </ThemeProvider>
+));
+
+storiesOf('Button', module).add('Outline', () => (
+  <ThemeProvider>
+    <Button text="Outline" outline />
   </ThemeProvider>
 ));
