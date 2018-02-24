@@ -37,14 +37,14 @@ storiesOf('Typography', module).add('Text', () => (
   </ThemeProvider>
 ));
 
-storiesOf('Button', module).add('Default', () => (
+storiesOf('Button', module).add('Default Primary', () => (
   <ThemeProvider>
     <Button text="Default" />
   </ThemeProvider>
 ));
 
-storiesOf('Button', module).add('Outline', () => (
+storiesOf('Button', module).add('Outline Secondary', () => (
   <ThemeProvider>
-    <Button text="Outline" outline />
+    <Button text="Outline" outline color="secondary" />
   </ThemeProvider>
 ));
