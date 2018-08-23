@@ -17,14 +17,11 @@ const defaultProps = {
 };
 
 const H4 = ({
-  text,
-  theme,
-  color,
-  secondary,
-  styles,
+  text, theme, color, secondary, styles,
 }) => (
   <h4 style={styles}>
-    <style jsx>{`
+    <style jsx>
+      {`
       h4 {
         color: ${theme.colors[color]}
         font-family: ${secondary ? theme.font.secondary : theme.font.primary}

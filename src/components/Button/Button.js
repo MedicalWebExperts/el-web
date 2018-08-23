@@ -15,10 +15,7 @@ const defaultProps = {
 };
 
 const Button = ({
-  text,
-  outline,
-  color,
-  theme,
+  text, outline, color, theme,
 }) => {
   const { colors, button } = theme;
   // check type
@@ -54,25 +51,28 @@ const Button = ({
 
   return (
     <div>
-      <style jsx>{`
-        button {
-          text-align: ${button.textAlign};
-          padding: ${button.padding};
-          font-size: ${button.fontSize};
-          cursor: ${button.cursor};
-        }
-        button.default {
-          background-color: ${backgroundColor};
-          color: ${textColor};
-        }
-        button.outline {
-          background-color: ${colors.transparent};
-          border: solid 1px ${backgroundColor};
-          color: ${backgroundColor};
-        }
-      `}
+      <style jsx>
+        {`
+          button {
+            text-align: ${button.textAlign};
+            padding: ${button.padding};
+            font-size: ${button.fontSize};
+            cursor: ${button.cursor};
+          }
+          button.default {
+            background-color: ${backgroundColor};
+            color: ${textColor};
+          }
+          button.outline {
+            background-color: ${colors.transparent};
+            border: solid 1px ${backgroundColor};
+            color: ${backgroundColor};
+          }
+        `}
       </style>
-      <button className={buttonClassName}>{text}</button>
+      <button type="button" className={buttonClassName}>
+        {text}
+      </button>
     </div>
   );
 };

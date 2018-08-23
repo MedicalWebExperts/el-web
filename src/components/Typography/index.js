@@ -6,13 +6,6 @@ import H5 from './H5/H5';
 import H6 from './H6/H6';
 import Text from './Text/Text';
 
-
-module.exports = {
-  H1,
-  H2,
-  H3,
-  H4,
-  H5,
-  H6,
-  Text,
+export {
+  H1, H2, H3, H4, H5, H6, Text,
 };
