@@ -12,6 +12,10 @@ var _Typography = require('./components/Typography');
 
 var _Typography2 = _interopRequireDefault(_Typography);
 
+var _Button = require('./components/Button');
+
+var _Button2 = _interopRequireDefault(_Button);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
@@ -22,5 +26,6 @@ exports.default = {
   },
   spacing: 25,
   typography: _Typography2.default,
-  colors: _colors2.default
+  colors: _colors2.default,
+  button: _Button2.default
 };

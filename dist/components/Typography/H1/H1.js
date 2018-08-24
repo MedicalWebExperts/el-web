@@ -46,7 +46,7 @@ var H1 = function H1(_ref) {
     },
     _react2.default.createElement(_style2.default, {
       styleId: '1596529508',
-      css: 'h1.__jsx-style-dynamic-selector{color:' + theme.colors[color] + ';font-family:' + (secondary ? theme.font.secondary : theme.font.primary) + ';font-size:' + theme.font.size * theme.typography.h1.fontSize + 'px;line-height:' + theme.font.size / 10 + ';margin-top:0;margin-bottom:' + theme.spacing * theme.typography.h1.marginBottom + 'px;}',
+      css: 'h1.__jsx-style-dynamic-selector{color:' + theme.colors[color] + ' font-family:' + (secondary ? theme.font.secondary : theme.font.primary) + ' font-size:' + theme.font.size * theme.typography.h1.fontSize + 'px line-height:' + theme.font.size / 10 + ' margin-top:0 margin-bottom:' + theme.spacing * theme.typography.h1.marginBottom + 'px;}',
       dynamic: [theme.colors[color], secondary ? theme.font.secondary : theme.font.primary, theme.font.size * theme.typography.h1.fontSize, theme.font.size / 10, theme.spacing * theme.typography.h1.marginBottom]
     }),
     text

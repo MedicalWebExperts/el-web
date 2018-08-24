@@ -14,6 +14,10 @@ var _Col2 = _interopRequireDefault(_Col);
 
 var _Typography = require('./components/Typography');
 
+var _Button = require('./components/Button/Button');
+
+var _Button2 = _interopRequireDefault(_Button);
+
 var _theme = require('./theme');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -31,5 +35,6 @@ module.exports = {
   H4: _Typography.H4,
   H5: _Typography.H5,
   H6: _Typography.H6,
-  Text: _Typography.Text
+  Text: _Typography.Text,
+  Button: _Button2.default
 };

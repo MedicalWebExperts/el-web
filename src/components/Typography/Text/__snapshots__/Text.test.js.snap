@@ -16,7 +16,7 @@ exports[`Component Text Snapshot added optional style inline prop 1`] = `
 
 exports[`Component Text Snapshot primary color of the theme 1`] = `
 <p
-  className="jsx-271239036"
+  className="jsx-3016568310"
   style={Object {}}
 >
   This is a component Text!
@@ -52,7 +52,7 @@ exports[`Component Text Snapshot use gutterBottom prop 1`] = `
 
 exports[`Component Text Snapshot use gutterBottom prop and secondary color 1`] = `
 <p
-  className="jsx-3710712061"
+  className="jsx-3932295889"
   style={Object {}}
 >
   This is a component Text!

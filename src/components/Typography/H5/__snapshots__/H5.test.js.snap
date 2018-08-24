@@ -16,7 +16,7 @@ exports[`Component H5 Snapshot added optional style inline prop 1`] = `
 
 exports[`Component H5 Snapshot primary color of the theme 1`] = `
 <h5
-  className="jsx-3045893191"
+  className="jsx-1182249165"
   style={Object {}}
 >
   Heading 5

@@ -56,7 +56,7 @@ var Text = function Text(_ref) {
     },
     _react2.default.createElement(_style2.default, {
       styleId: '3525336644',
-      css: 'p.__jsx-style-dynamic-selector{color:' + theme.colors[color] + ';text-align:' + align + ';font-family:' + (secondary ? theme.font.secondary : theme.font.primary) + ';white-space:' + (noWrap ? 'nowrap' : 'normal') + ';font-size:' + theme.font.size + 'px;line-height:' + theme.font.size / 10 + ';margin-top:0;margin-bottom:' + theme.spacing + 'px;}',
+      css: 'p.__jsx-style-dynamic-selector{color:' + theme.colors[color] + ' text-align:' + align + ' font-family:' + (secondary ? theme.font.secondary : theme.font.primary) + ' white-space:' + (noWrap ? 'nowrap' : 'normal') + ' font-size:' + theme.font.size + 'px line-height:' + theme.font.size / 10 + ' margin-top:0 margin-bottom:' + theme.spacing + 'px;}',
       dynamic: [theme.colors[color], align, secondary ? theme.font.secondary : theme.font.primary, noWrap ? 'nowrap' : 'normal', theme.font.size, theme.font.size / 10, theme.spacing]
     }),
     text || children

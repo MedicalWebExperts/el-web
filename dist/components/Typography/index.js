@@ -1,5 +1,10 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Text = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = undefined;
+
 var _H = require('./H1/H1');
 
 var _H2 = _interopRequireDefault(_H);
@@ -30,12 +35,10 @@ var _Text2 = _interopRequireDefault(_Text);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = {
-  H1: _H2.default,
-  H2: _H4.default,
-  H3: _H6.default,
-  H4: _H8.default,
-  H5: _H10.default,
-  H6: _H12.default,
-  Text: _Text2.default
-};
+exports.H1 = _H2.default;
+exports.H2 = _H4.default;
+exports.H3 = _H6.default;
+exports.H4 = _H8.default;
+exports.H5 = _H10.default;
+exports.H6 = _H12.default;
+exports.Text = _Text2.default;

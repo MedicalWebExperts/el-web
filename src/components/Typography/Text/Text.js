@@ -24,17 +24,11 @@ const defaultProps = {
 };
 
 const Text = ({
-  children,
-  text,
-  color,
-  align,
-  noWrap,
-  secondary,
-  theme,
-  styles,
+  children, text, color, align, noWrap, secondary, theme, styles,
 }) => (
   <p style={styles}>
-    <style jsx>{`
+    <style jsx>
+      {`
       p {
         color: ${theme.colors[color]}
         text-align: ${align}
