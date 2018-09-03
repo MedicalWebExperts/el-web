@@ -73,12 +73,6 @@ $ docker-compose run elweb npm run test:watch
 #### Building the app to publish
 
 ``` bash
-$ docker-compose run elweb npm run prepublish
-```
-
-or:
-
-``` bash
 $ docker-compose run elweb npm run build
 ```
 

@@ -9,13 +9,11 @@
     "build:watch": "babel src -w -d dist",
     "lint": "eslint src/**; exit 0",
     "lint:watch": "esw -w src/**",
-    "prepublish": "npm run build",
     "test": "jest",
     "test:watch": "TEST=true jest --watchAll --silent",
     "test:coverage": "TEST=true jest --coverage --silent",
     "precommit": "npm run lint",
     "prepush": "npm run test",
-    "updateSnapshots": "jest --updateSnapshot",
     "updateTests": "npm run test -- -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
