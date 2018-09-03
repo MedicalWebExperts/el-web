@@ -5,17 +5,18 @@ import { withTheme } from '../../theme';
 const propTypes = {
   text: PropTypes.string.isRequired,
   outline: PropTypes.bool,
-  color: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
   theme: PropTypes.shape({}).isRequired,
 };
 
 const defaultProps = {
   outline: false,
-  color: 'primary',
+  type: 'primary',
 };
 
+
 const Button = ({
-  text, outline, color, theme,
+  text, outline, type, theme,
 }) => {
   const { colors, button } = theme;
   // check type
@@ -26,7 +27,7 @@ const Button = ({
   // check colors
   let backgroundColor = null;
   let textColor = null;
-  switch (color) {
+  switch (type) {
     case 'secondary':
       backgroundColor = colors.secondary;
       textColor = colors.buttonSecondaryText;
@@ -58,15 +59,32 @@ const Button = ({
             padding: ${button.padding};
             font-size: ${button.fontSize};
             cursor: ${button.cursor};
+            font-weight: ${button.fontWeight};
+            border-radius: ${button.borderRadius};
+            border: ${button.border};
+          }
+          button:active,
+          button:focus{
+            outline: ${button.ouline};
           }
           button.default {
             background-color: ${backgroundColor};
             color: ${textColor};
           }
+          button.default:hover{
+            box-shadow: 0 2px 6px rgba(0,0,0,.3);
+          }
+          button.default:active,
+          button.default:focus{
+            box-shadow: 0 2px 4px rgba(0,0,0,.3);
+          }
           button.outline {
             background-color: ${colors.transparent};
-            border: solid 1px ${backgroundColor};
-            color: ${backgroundColor};
+            border: solid 1px ${colors.primary};
+            color: ${colors.primary};
+          }
+          button.outline:hover{
+            opacity: .8;
           }
         `}
       </style>
