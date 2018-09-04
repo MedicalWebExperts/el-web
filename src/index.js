@@ -5,6 +5,7 @@ import {
   H1, H2, H3, H4, H5, H6, Text,
 } from './components/Typography';
 import Button from './components/Button/Button';
+import Avatar from './components/Avatar/Avatar';
 
 import { ThemeProvider, withTheme, DefaultTheme } from './theme';
 
@@ -23,4 +24,5 @@ module.exports = {
   H6,
   Text,
   Button,
+  Avatar,
 };
