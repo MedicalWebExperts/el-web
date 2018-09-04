@@ -5,13 +5,9 @@ import {
   H1, H2, H3, H4, H5, H6, Text,
 } from './components/Typography';
 import Button from './components/Button/Button';
-
-import { ThemeProvider, withTheme, DefaultTheme } from './theme';
+import Input from './components/Input/Input';
 
 module.exports = {
-  ThemeProvider,
-  withTheme,
-  DefaultTheme,
   Grid,
   Row,
   Col,
@@ -23,4 +19,5 @@ module.exports = {
   H6,
   Text,
   Button,
+  Input,
 };

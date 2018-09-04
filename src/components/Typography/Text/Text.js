@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from '../../../theme';
+
+import theme from '../../../styles';
 
 const propTypes = {
   children: PropTypes.node,
@@ -9,7 +10,6 @@ const propTypes = {
   align: PropTypes.oneOf(['left', 'right', 'center', 'inherit', 'justify']),
   noWrap: PropTypes.bool,
   secondary: PropTypes.bool,
-  theme: PropTypes.shape({}).isRequired,
   styles: PropTypes.shape({}),
 };
 
@@ -24,7 +24,7 @@ const defaultProps = {
 };
 
 const Text = ({
-  children, text, color, align, noWrap, secondary, theme, styles,
+  children, text, color, align, noWrap, secondary, styles,
 }) => (
   <p style={styles}>
     <style jsx>
@@ -47,4 +47,4 @@ const Text = ({
 
 Text.propTypes = propTypes;
 Text.defaultProps = defaultProps;
-export default withTheme(Text);
+export default Text;

@@ -16,15 +16,16 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _theme = require('../../theme');
+var _styles = require('../../styles');
+
+var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var propTypes = {
   text: _propTypes2.default.string.isRequired,
   outline: _propTypes2.default.bool,
-  color: _propTypes2.default.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
-  theme: _propTypes2.default.shape({}).isRequired
+  color: _propTypes2.default.oneOf(['primary', 'secondary', 'success', 'warning', 'danger'])
 };
 
 var defaultProps = {
@@ -35,12 +36,9 @@ var defaultProps = {
 var Button = function Button(_ref) {
   var text = _ref.text,
       outline = _ref.outline,
-      color = _ref.color,
-      theme = _ref.theme;
-  var colors = theme.colors,
-      button = theme.button;
-  // check type
+      color = _ref.color;
 
+  // check type
   var buttonClassName = 'default';
   if (outline) {
     buttonClassName = 'outline';
@@ -50,40 +48,40 @@ var Button = function Button(_ref) {
   var textColor = null;
   switch (color) {
     case 'secondary':
-      backgroundColor = colors.secondary;
-      textColor = colors.buttonSecondaryText;
+      backgroundColor = _styles2.default.colors.secondary;
+      textColor = _styles2.default.colors.buttonSecondaryText;
       break;
     case 'success':
-      backgroundColor = colors.success;
-      textColor = colors.buttonSuccessText;
+      backgroundColor = _styles2.default.colors.success;
+      textColor = _styles2.default.colors.buttonSuccessText;
       break;
     case 'warning':
-      backgroundColor = colors.warning;
-      textColor = colors.buttonWarningText;
+      backgroundColor = _styles2.default.colors.warning;
+      textColor = _styles2.default.colors.buttonWarningText;
       break;
     case 'danger':
-      backgroundColor = colors.danger;
-      textColor = colors.buttonDangerText;
+      backgroundColor = _styles2.default.colors.danger;
+      textColor = _styles2.default.colors.buttonDangerText;
       break;
     default:
-      backgroundColor = colors.primary;
-      textColor = colors.buttonPrimaryText;
+      backgroundColor = _styles2.default.colors.primary;
+      textColor = _styles2.default.colors.buttonPrimaryText;
       break;
   }
 
   return _react2.default.createElement(
     'div',
     {
-      className: _style2.default.dynamic([['2190887616', [button.textAlign, button.padding, button.fontSize, button.cursor, backgroundColor, textColor, colors.transparent, backgroundColor, backgroundColor]]])
+      className: _style2.default.dynamic([['193854085', [backgroundColor, textColor, _styles2.default.colors.transparent, backgroundColor, backgroundColor]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '2190887616',
-      css: 'button.__jsx-style-dynamic-selector{text-align:' + button.textAlign + ';padding:' + button.padding + ';font-size:' + button.fontSize + ';cursor:' + button.cursor + ';}button.default.__jsx-style-dynamic-selector{background-color:' + backgroundColor + ';color:' + textColor + ';}button.outline.__jsx-style-dynamic-selector{background-color:' + colors.transparent + ';border:solid 1px ' + backgroundColor + ';color:' + backgroundColor + ';}',
-      dynamic: [button.textAlign, button.padding, button.fontSize, button.cursor, backgroundColor, textColor, colors.transparent, backgroundColor, backgroundColor]
+      styleId: '193854085',
+      css: 'button.__jsx-style-dynamic-selector{text-align:center;padding:15px 30px;font-size:16px;cursor:\'pointer\';}button.default.__jsx-style-dynamic-selector{background-color:' + backgroundColor + ';color:' + textColor + ';outline:none;}button.outline.__jsx-style-dynamic-selector{background-color:' + _styles2.default.colors.transparent + ';border:solid 1px ' + backgroundColor + ';color:' + backgroundColor + ';outline:none;}',
+      dynamic: [backgroundColor, textColor, _styles2.default.colors.transparent, backgroundColor, backgroundColor]
     }),
     _react2.default.createElement(
       'button',
-      { type: 'button', className: _style2.default.dynamic([['2190887616', [button.textAlign, button.padding, button.fontSize, button.cursor, backgroundColor, textColor, colors.transparent, backgroundColor, backgroundColor]]]) + ' ' + (buttonClassName || '')
+      { type: 'button', className: _style2.default.dynamic([['193854085', [backgroundColor, textColor, _styles2.default.colors.transparent, backgroundColor, backgroundColor]]]) + ' ' + (buttonClassName || '')
       },
       text
     )
@@ -93,4 +91,4 @@ var Button = function Button(_ref) {
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
 
-exports.default = (0, _theme.withTheme)(Button);
+exports.default = Button;

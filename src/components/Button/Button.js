@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from '../../theme';
+import theme from '../../styles';
 
 const propTypes = {
   text: PropTypes.string.isRequired,
   outline: PropTypes.bool,
   color: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
-  theme: PropTypes.shape({}).isRequired,
 };
 
 const defaultProps = {
@@ -14,10 +13,7 @@ const defaultProps = {
   color: 'primary',
 };
 
-const Button = ({
-  text, outline, color, theme,
-}) => {
-  const { colors, button } = theme;
+const Button = ({ text, outline, color }) => {
   // check type
   let buttonClassName = 'default';
   if (outline) {
@@ -28,24 +24,24 @@ const Button = ({
   let textColor = null;
   switch (color) {
     case 'secondary':
-      backgroundColor = colors.secondary;
-      textColor = colors.buttonSecondaryText;
+      backgroundColor = theme.colors.secondary;
+      textColor = theme.colors.buttonSecondaryText;
       break;
     case 'success':
-      backgroundColor = colors.success;
-      textColor = colors.buttonSuccessText;
+      backgroundColor = theme.colors.success;
+      textColor = theme.colors.buttonSuccessText;
       break;
     case 'warning':
-      backgroundColor = colors.warning;
-      textColor = colors.buttonWarningText;
+      backgroundColor = theme.colors.warning;
+      textColor = theme.colors.buttonWarningText;
       break;
     case 'danger':
-      backgroundColor = colors.danger;
-      textColor = colors.buttonDangerText;
+      backgroundColor = theme.colors.danger;
+      textColor = theme.colors.buttonDangerText;
       break;
     default:
-      backgroundColor = colors.primary;
-      textColor = colors.buttonPrimaryText;
+      backgroundColor = theme.colors.primary;
+      textColor = theme.colors.buttonPrimaryText;
       break;
   }
 
@@ -54,19 +50,21 @@ const Button = ({
       <style jsx>
         {`
           button {
-            text-align: ${button.textAlign};
-            padding: ${button.padding};
-            font-size: ${button.fontSize};
-            cursor: ${button.cursor};
+            text-align: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: 'pointer';
           }
           button.default {
             background-color: ${backgroundColor};
             color: ${textColor};
+            outline: none;
           }
           button.outline {
-            background-color: ${colors.transparent};
+            background-color: ${theme.colors.transparent};
             border: solid 1px ${backgroundColor};
             color: ${backgroundColor};
+            outline: none;
           }
         `}
       </style>
@@ -80,4 +78,4 @@ const Button = ({
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;
 
-export default withTheme(Button);
+export default Button;

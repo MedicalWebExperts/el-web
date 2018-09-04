@@ -16,7 +16,9 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _theme = require('../../../theme');
+var _styles = require('../../../styles');
+
+var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24,7 +26,6 @@ var propTypes = {
   text: _propTypes2.default.string.isRequired,
   secondary: _propTypes2.default.bool,
   color: _propTypes2.default.oneOf(['primary', 'secondary', 'default']),
-  theme: _propTypes2.default.shape({}).isRequired,
   styles: _propTypes2.default.shape({})
 };
 
@@ -36,18 +37,17 @@ var defaultProps = {
 
 var H4 = function H4(_ref) {
   var text = _ref.text,
-      theme = _ref.theme,
       color = _ref.color,
       secondary = _ref.secondary,
       styles = _ref.styles;
   return _react2.default.createElement(
     'h4',
-    { style: styles, className: _style2.default.dynamic([['2456829569', [theme.colors[color], secondary ? theme.font.secondary : theme.font.primary, theme.font.size * theme.typography.h4.fontSize, theme.font.size / 10, theme.spacing * theme.typography.h4.marginBottom]]])
+    { style: styles, className: _style2.default.dynamic([['2509457466', [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 1.75, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '2456829569',
-      css: 'h4.__jsx-style-dynamic-selector{color:' + theme.colors[color] + ' font-family:' + (secondary ? theme.font.secondary : theme.font.primary) + ' font-size:' + theme.font.size * theme.typography.h4.fontSize + 'px line-height:' + theme.font.size / 10 + ' margin-top:0 margin-bottom:' + theme.spacing * theme.typography.h4.marginBottom + 'px;}',
-      dynamic: [theme.colors[color], secondary ? theme.font.secondary : theme.font.primary, theme.font.size * theme.typography.h4.fontSize, theme.font.size / 10, theme.spacing * theme.typography.h4.marginBottom]
+      styleId: '2509457466',
+      css: 'h4.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ' font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ' font-size:' + _styles2.default.font.size * 1.75 + 'px line-height:' + _styles2.default.font.size / 10 + ' margin-top:0 margin-bottom:' + _styles2.default.spacing * 1.6 + 'px;}',
+      dynamic: [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 1.75, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]
     }),
     text
   );
@@ -56,4 +56,4 @@ var H4 = function H4(_ref) {
 H4.propTypes = propTypes;
 H4.defaultProps = defaultProps;
 
-exports.default = (0, _theme.withTheme)(H4);
+exports.default = H4;

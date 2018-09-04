@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from '../../../theme';
+
+import theme from '../../../styles';
 
 const propTypes = {
   text: PropTypes.string.isRequired,
   secondary: PropTypes.bool,
   color: PropTypes.oneOf(['primary', 'secondary', 'default']),
-  theme: PropTypes.shape({}).isRequired,
   styles: PropTypes.shape({}),
 };
 
@@ -17,7 +17,7 @@ const defaultProps = {
 };
 
 const H2 = ({
-  text, theme, color, secondary, styles,
+  text, color, secondary, styles,
 }) => (
   <h2 style={styles}>
     <style jsx>
@@ -25,10 +25,10 @@ const H2 = ({
       h2 {
         color: ${theme.colors[color]}
         font-family: ${secondary ? theme.font.secondary : theme.font.primary}
-        font-size: ${theme.font.size * theme.typography.h2.fontSize}px
+        font-size: ${theme.font.size * 2.5}px
         line-height: ${theme.font.size / 10}
         margin-top: 0
-        margin-bottom: ${theme.spacing * theme.typography.h2.marginBottom}px
+        margin-bottom: ${theme.spacing * 1.6}px
       }
     `}
     </style>
@@ -39,4 +39,4 @@ const H2 = ({
 H2.propTypes = propTypes;
 H2.defaultProps = defaultProps;
 
-export default withTheme(H2);
+export default H2;
