@@ -5,15 +5,15 @@ import theme from '../../styles';
 const propTypes = {
   text: PropTypes.string.isRequired,
   outline: PropTypes.bool,
-  color: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
 };
 
 const defaultProps = {
   outline: false,
-  color: 'primary',
+  type: 'primary',
 };
 
-const Button = ({ text, outline, color }) => {
+const Button = ({ text, outline, type }) => {
   // check type
   let buttonClassName = 'default';
   if (outline) {
@@ -22,7 +22,7 @@ const Button = ({ text, outline, color }) => {
   // check colors
   let backgroundColor = null;
   let textColor = null;
-  switch (color) {
+  switch (type) {
     case 'secondary':
       backgroundColor = theme.colors.secondary;
       textColor = theme.colors.buttonSecondaryText;
@@ -53,18 +53,35 @@ const Button = ({ text, outline, color }) => {
             text-align: center;
             padding: 15px 30px;
             font-size: 16px;
-            cursor: 'pointer';
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+          }
+          button:active,
+          button:focus {
+            outline: none;
           }
           button.default {
             background-color: ${backgroundColor};
             color: ${textColor};
             outline: none;
           }
+          button.default:hover {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          }
+          button.default:active,
+          button.default:focus {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          }
           button.outline {
             background-color: ${theme.colors.transparent};
-            border: solid 1px ${backgroundColor};
-            color: ${backgroundColor};
-            outline: none;
+            border: solid 1px ${theme.colors.primary};
+            color: ${theme.colors.primary};
+          }
+          button.outline:hover {
+            opacity: 0.8;
           }
         `}
       </style>
