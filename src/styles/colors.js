@@ -13,4 +13,5 @@ export default {
   buttonSuccessText: '#FFFFFF',
   buttonWarningText: '#FFFFFF',
   buttonDangerText: '#FFFFFF',
+  white: '#FFFFF',
 };

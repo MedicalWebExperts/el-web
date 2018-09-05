@@ -22,15 +22,15 @@ const H4 = ({
   <h4 style={styles}>
     <style jsx>
       {`
-      h4 {
-        color: ${theme.colors[color]}
-        font-family: ${secondary ? theme.font.secondary : theme.font.primary}
-        font-size: ${theme.font.size * 1.75}px
-        line-height: ${theme.font.size / 10}
-        margin-top: 0
-        margin-bottom: ${theme.spacing * 1.6}px
-      }
-    `}
+        h4 {
+          color: ${theme.colors[color]};
+          font-family: ${secondary ? theme.font.secondary : theme.font.primary};
+          font-size: ${theme.font.size * 1.75}px;
+          line-height: ${theme.font.size / 10};
+          margin-top: 0;
+          margin-bottom: ${theme.spacing * 1.6}px;
+        }
+      `}
     </style>
     {text}
   </h4>

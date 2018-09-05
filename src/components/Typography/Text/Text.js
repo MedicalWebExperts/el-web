@@ -29,17 +29,17 @@ const Text = ({
   <p style={styles}>
     <style jsx>
       {`
-      p {
-        color: ${theme.colors[color]}
-        text-align: ${align}
-        font-family: ${secondary ? theme.font.secondary : theme.font.primary}
-        white-space: ${noWrap ? 'nowrap' : 'normal'}
-        font-size: ${theme.font.size}px
-        line-height: ${theme.font.size / 10}
-        margin-top: 0
-        margin-bottom: ${theme.spacing}px
-      }
-    `}
+        p {
+          color: ${theme.colors[color]};
+          text-align: ${align};
+          font-family: ${secondary ? theme.font.secondary : theme.font.primary};
+          white-space: ${noWrap ? 'nowrap' : 'normal'};
+          font-size: ${theme.font.size}px;
+          line-height: ${theme.font.size / 10};
+          margin-top: 0;
+          margin-bottom: ${theme.spacing}px;
+        }
+      `}
     </style>
     {text || children}
   </p>

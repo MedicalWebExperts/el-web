@@ -22,15 +22,15 @@ const H3 = ({
   <h3 style={styles}>
     <style jsx>
       {`
-      h3 {
-        color: ${theme.colors[color]}
-        font-family: ${secondary ? theme.font.secondary : theme.font.primary}
-        font-size: ${theme.font.size * 2.1}px
-        line-height: ${theme.font.size / 10}
-        margin-top: 0
-        margin-bottom: ${theme.spacing * 1.6}px
-      }
-    `}
+        h3 {
+          color: ${theme.colors[color]};
+          font-family: ${secondary ? theme.font.secondary : theme.font.primary};
+          font-size: ${theme.font.size * 2.1}px;
+          line-height: ${theme.font.size / 10};
+          margin-top: 0;
+          margin-bottom: ${theme.spacing * 1.6}px;
+        }
+      `}
     </style>
     {text}
   </h3>

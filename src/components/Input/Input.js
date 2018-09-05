@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
-import { string, oneOf, func } from 'prop-types';
+import {
+  string, oneOf, bool, func,
+} from 'prop-types';
+
+import theme from '../../styles';
 
 class Input extends Component {
   static propTypes = {
+    label: string,
     value: string,
-    color: oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
-    handleChange: func.isRequired,
+    name: string.isRequired,
+    type: oneOf(['text', 'email', 'tel', 'select']).isRequired,
+    required: bool,
+    onChange: func.isRequired,
   };
 
   static defaultProps = {
-    value: null,
-    color: 'primary',
+    label: '',
+    value: '',
+    required: false,
   };
 
   state = {
-    value: null,
+    value: this.props.value,
   };
 
   handleChange = (event) => {
@@ -25,57 +33,73 @@ class Input extends Component {
 
   render() {
     const {
-      title, type, name, required, theme,
+      label, type, name, required,
     } = this.props;
-    const { colors, button } = theme;
-    const backgroundColor = 'white';
-    const textColor = 'black';
-
+    const { value } = this.state;
     return (
-      // <div>
-      //   {title !== '' && <label>{title}</label>}
-      //   {type !== 'textarea' ? (
-      //     <input
-      //       type={type}
-      //       name={name}
-      //       value={this.state.value}
-      //       onChange={this.handleChange}
-      //       required={required}
-      //       className={`form-control ${css.formControl}`}
-      //     />
-      //   ) : (
-      //       <textarea
-      //         type={type}
-      //         name={name}
-      //         defaultValue={this.state.value}
-      //         onChange={this.handleChange}
-      //         required={required}
-      //         className={`form-control ${css.formControl}`}
-      //       />
-      //     )}
-      //   {required && <div className={css.withErrors} role="alert" />}
-      // </div>
       <div>
-        <style jsx>
-          {`
-            button {
-              text-align: ${button.textAlign};
-              padding: ${button.padding};
-              font-size: ${button.fontSize};
-              cursor: ${button.cursor};
-            }
-            button.default {
-              background-color: ${backgroundColor};
-              color: ${textColor};
-            }
-            button.outline {
-              background-color: ${colors.transparent};
-              border: solid 1px ${backgroundColor};
-              color: ${backgroundColor};
-            }
-          `}
-        </style>
-        <input type="text" value={value} onChange={handleChange} className={inputClassName} />
+        {
+          <style jsx>
+            {`
+              input {
+                text-align: center;
+                padding: 15px 30px;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: bold;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+              }
+              input:active,
+              input:focus {
+                outline: none;
+              }
+              input.default {
+                background-color: ${theme.colors.white};
+                color: ${theme.colors.textColor};
+                outline: none;
+              }
+              input.default:hover {
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+              }
+              input.default:active,
+              input.default:focus {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+              }
+              input.outline {
+                background-color: ${theme.colors.transparent};
+                border: solid 1px ${theme.colors.primary};
+                color: ${theme.colors.primary};
+              }
+              input.outline:hover {
+                opacity: 0.8;
+              }
+            `}
+          </style>
+        }
+        {/* eslint-disable */}
+        {label !== '' && <label>{label}</label>}
+        {/* eslint-enable */}
+        {type !== 'select' ? (
+          <input
+            type={type}
+            name={name}
+            value={value}
+            onChange={this.handleChange}
+            required={required}
+            className={inputClassName}
+          />
+        ) : (
+          <select
+            type={type}
+            name={name}
+            defaultValue={value}
+            onChange={this.handleChange}
+            required={required}
+            className={selectClassName}
+          />
+        )}
       </div>
     );
   }
