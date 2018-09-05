@@ -1,40 +1,33 @@
 import React, { Component } from 'react';
-import { string, oneOf, func } from 'prop-types';
+import { arrayOf, shape, func } from 'prop-types';
 
 import theme from '../../styles';
-import media from '../../utils/media';
 
-class Input extends Component {
+class Select extends Component {
   static propTypes = {
-    name: string.isRequired,
-    type: oneOf(['text', 'email', 'tel']).isRequired,
-    placeholder: string,
+    options: arrayOf(shape({})).isRequired,
     onChange: func.isRequired,
   };
 
-  static defaultProps = {
-    placeholder: 'Placeholder',
-  };
-
   state = {
-    value: '',
+    selectedValue: '',
   };
 
   handleChange = (event) => {
     const { name, value } = event.target;
-    this.setState({ value });
+    this.setState({ selectedValue: value });
     this.props.onChange({ [name]: value });
   };
 
   render() {
-    const { type, name, placeholder } = this.props;
-    const { value } = this.state;
+    const { options } = this.props;
+    const { selectedValue } = this.state;
     return (
       <div>
         {
           <style jsx>
             {`
-              input {
+              select {
                 padding: 10px;
                 font-size: 14px;
                 border-radius: 4px;
@@ -44,29 +37,25 @@ class Input extends Component {
                 color: ${theme.colors.textTertiary};
                 border-color: ${theme.colors.textTertiary};
                 outline: none;
-                width: ${media.isMobile() ? '100%' : 'auto'};
+                height: 40px;
+                min-width: 160px;
               }
-              input:active,
-              input:focus {
-                outline: none;
-              }
-              input::placeholder {
+              option {
                 color: ${theme.colors.textTertiary};
-                font-style: italic;
               }
             `}
           </style>
         }
-        <input
-          type={type}
-          name={name}
-          value={value}
-          onChange={this.handleChange}
-          placeholder={placeholder}
-        />
+        <select value={selectedValue} onChange={this.handleChange}>
+          {options.map(({ id, name, value }) => (
+            <option value={value} key={id}>
+              {name}
+            </option>
+          ))}
+        </select>
       </div>
     );
   }
 }
 
-export default Input;
+export default Select;
