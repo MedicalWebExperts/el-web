@@ -13,7 +13,7 @@ class Input extends Component {
   };
 
   static defaultProps = {
-    value: '',
+    value: 'Default Value',
     placeholder: 'Placeholder',
   };
 
@@ -67,7 +67,12 @@ class Input extends Component {
             placeholder={placeholder}
           />
         ) : (
-          <select type={type} name={name} value={value} onChange={this.handleChange} />
+          <select type={type} name={name} value={value} onChange={this.handleChange}>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
         )}
       </div>
     );
