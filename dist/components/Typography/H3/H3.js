@@ -42,11 +42,11 @@ var H3 = function H3(_ref) {
       styles = _ref.styles;
   return _react2.default.createElement(
     'h3',
-    { style: styles, className: _style2.default.dynamic([['1287068949', [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 2.1, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]]])
+    { style: styles, className: _style2.default.dynamic([['237130574', [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 2.1, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '1287068949',
-      css: 'h3.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ' font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ' font-size:' + _styles2.default.font.size * 2.1 + 'px line-height:' + _styles2.default.font.size / 10 + ' margin-top:0 margin-bottom:' + _styles2.default.spacing * 1.6 + 'px;}',
+      styleId: '237130574',
+      css: 'h3.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ';font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ';font-size:' + _styles2.default.font.size * 2.1 + 'px;line-height:' + _styles2.default.font.size / 10 + ';margin-top:0;margin-bottom:' + _styles2.default.spacing * 1.6 + 'px;}',
       dynamic: [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 2.1, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]
     }),
     text
@@ -56,4 +56,4 @@ var H3 = function H3(_ref) {
 H3.propTypes = propTypes;
 H3.defaultProps = defaultProps;
 
-exports.default = withTheme(H3);
+exports.default = H3;

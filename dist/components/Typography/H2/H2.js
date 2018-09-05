@@ -42,11 +42,11 @@ var H2 = function H2(_ref) {
       styles = _ref.styles;
   return _react2.default.createElement(
     'h2',
-    { style: styles, className: _style2.default.dynamic([['2837670859', [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 2.5, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]]])
+    { style: styles, className: _style2.default.dynamic([['1820386443', [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 2.5, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '2837670859',
-      css: 'h2.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ' font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ' font-size:' + _styles2.default.font.size * 2.5 + 'px line-height:' + _styles2.default.font.size / 10 + ' margin-top:0 margin-bottom:' + _styles2.default.spacing * 1.6 + 'px;}',
+      styleId: '1820386443',
+      css: 'h2.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ';font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ';font-size:' + _styles2.default.font.size * 2.5 + 'px;line-height:' + _styles2.default.font.size / 10 + ';margin-top:0;margin-bottom:' + _styles2.default.spacing * 1.6 + 'px;}',
       dynamic: [_styles2.default.colors[color], secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, _styles2.default.font.size * 2.5, _styles2.default.font.size / 10, _styles2.default.spacing * 1.6]
     }),
     text

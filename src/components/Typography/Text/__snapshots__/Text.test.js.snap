@@ -2,7 +2,7 @@
 
 exports[`Component Text Snapshot added optional style inline prop 1`] = `
 <p
-  className="jsx-1777155260"
+  className="jsx-1648632443"
   style={
     Object {
       "lineHeight": 2,
@@ -16,7 +16,7 @@ exports[`Component Text Snapshot added optional style inline prop 1`] = `
 
 exports[`Component Text Snapshot primary color of the theme 1`] = `
 <p
-  className="jsx-3016568310"
+  className="jsx-3666013489"
   style={Object {}}
 >
   This is a component Text!
@@ -25,7 +25,7 @@ exports[`Component Text Snapshot primary color of the theme 1`] = `
 
 exports[`Component Text Snapshot secondary font-family of the theme 1`] = `
 <p
-  className="jsx-664054977"
+  className="jsx-636171398"
   style={Object {}}
 >
   This is a component Text!
@@ -34,7 +34,7 @@ exports[`Component Text Snapshot secondary font-family of the theme 1`] = `
 
 exports[`Component Text Snapshot use align prop with value right 1`] = `
 <p
-  className="jsx-2687627385"
+  className="jsx-2930414014"
   style={Object {}}
 >
   This is a component Text!
@@ -43,7 +43,7 @@ exports[`Component Text Snapshot use align prop with value right 1`] = `
 
 exports[`Component Text Snapshot use gutterBottom prop 1`] = `
 <p
-  className="jsx-1777155260"
+  className="jsx-1648632443"
   style={Object {}}
 >
   This is a component Text!
@@ -52,7 +52,7 @@ exports[`Component Text Snapshot use gutterBottom prop 1`] = `
 
 exports[`Component Text Snapshot use gutterBottom prop and secondary color 1`] = `
 <p
-  className="jsx-3932295889"
+  className="jsx-3904412310"
   style={Object {}}
 >
   This is a component Text!
@@ -61,7 +61,7 @@ exports[`Component Text Snapshot use gutterBottom prop and secondary color 1`] =
 
 exports[`Component Text Snapshot use gutterBottom prop and secondary font 1`] = `
 <p
-  className="jsx-664054977"
+  className="jsx-636171398"
   style={Object {}}
 >
   This is a component Text!
@@ -70,7 +70,7 @@ exports[`Component Text Snapshot use gutterBottom prop and secondary font 1`] = 
 
 exports[`Component Text Snapshot use gutterBottom prop, secondary font and align 1`] = `
 <p
-  className="jsx-3491589124"
+  className="jsx-3101604419"
   style={Object {}}
 >
   This is a component Text!
@@ -79,7 +79,7 @@ exports[`Component Text Snapshot use gutterBottom prop, secondary font and align
 
 exports[`Component Text Snapshot without arguments, take the default values, use childreen prop 1`] = `
 <p
-  className="jsx-1777155260"
+  className="jsx-1648632443"
   style={Object {}}
 >
   This is a component Text!

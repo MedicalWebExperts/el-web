@@ -6,17 +6,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _style = require('styled-jsx/style');
-
-var _style2 = _interopRequireDefault(_style);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
 var _propTypes = require('prop-types');
 
-var _theme = require('../../theme');
+var _styles = require('../../styles');
+
+var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -43,7 +41,7 @@ var Input = function (_Component) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Input.__proto__ || Object.getPrototypeOf(Input)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      value: null
+      value: _this.props.value
     }, _this.handleChange = function (event) {
       var _event$target = event.target,
           name = _event$target.name,
@@ -58,54 +56,26 @@ var Input = function (_Component) {
     key: 'render',
     value: function render() {
       var _props = this.props,
-          title = _props.title,
           type = _props.type,
           name = _props.name,
-          required = _props.required,
-          theme = _props.theme;
-      var colors = theme.colors,
-          button = theme.button;
+          placeholder = _props.placeholder;
+      var value = this.state.value;
 
-      var backgroundColor = 'white';
-      var textColor = 'black';
-
-      return (
-        // <div>
-        //   {title !== '' && <label>{title}</label>}
-        //   {type !== 'textarea' ? (
-        //     <input
-        //       type={type}
-        //       name={name}
-        //       value={this.state.value}
-        //       onChange={this.handleChange}
-        //       required={required}
-        //       className={`form-control ${css.formControl}`}
-        //     />
-        //   ) : (
-        //       <textarea
-        //         type={type}
-        //         name={name}
-        //         defaultValue={this.state.value}
-        //         onChange={this.handleChange}
-        //         required={required}
-        //         className={`form-control ${css.formControl}`}
-        //       />
-        //     )}
-        //   {required && <div className={css.withErrors} role="alert" />}
-        // </div>
+      return _react2.default.createElement(
+        'div',
+        null,
         _react2.default.createElement(
-          'div',
-          {
-            className: _style2.default.dynamic([['3443850342', [button.textAlign, button.padding, button.fontSize, button.cursor, backgroundColor, textColor, colors.transparent, backgroundColor, backgroundColor]]])
-          },
-          _react2.default.createElement(_style2.default, {
-            styleId: '3443850342',
-            css: 'button.__jsx-style-dynamic-selector{text-align:' + button.textAlign + ';padding:' + button.padding + ';font-size:' + button.fontSize + ';cursor:' + button.cursor + ';}button.default.__jsx-style-dynamic-selector{background-color:' + backgroundColor + ';color:' + textColor + ';}button.outline.__jsx-style-dynamic-selector{background-color:' + colors.transparent + ';border:solid 1px ' + backgroundColor + ';color:' + backgroundColor + ';}',
-            dynamic: [button.textAlign, button.padding, button.fontSize, button.cursor, backgroundColor, textColor, colors.transparent, backgroundColor, backgroundColor]
-          }),
-          _react2.default.createElement('input', { type: 'text', value: value, onChange: handleChange, className: _style2.default.dynamic([['3443850342', [button.textAlign, button.padding, button.fontSize, button.cursor, backgroundColor, textColor, colors.transparent, backgroundColor, backgroundColor]]]) + ' ' + (inputClassName || '')
-          })
-        )
+          'style',
+          { jsx: true },
+          '\n              input,\n              select {\n                padding: 10px;\n                font-size: 14px;\n                border-radius: 4px;\n                border-width: 1px;\n                border-style: solid;\n                background-color: ' + _styles2.default.colors.white + ';\n                color: ' + _styles2.default.colors.textTertiary + ';\n                border-color: ' + _styles2.default.colors.textTertiary + ';\n                outline: none;\n              }\n              input:active,\n              input:focus {\n                outline: none;\n              }\n              input::placeholder {\n                color: ' + _styles2.default.colors.textTertiary + ';\n                font-style: italic;\n              }\n            '
+        ),
+        type !== 'select' ? _react2.default.createElement('input', {
+          type: type,
+          name: name,
+          value: value,
+          onChange: this.handleChange,
+          placeholder: placeholder
+        }) : _react2.default.createElement('select', { type: type, name: name, value: value, onChange: this.handleChange })
       );
     }
   }]);
@@ -115,12 +85,13 @@ var Input = function (_Component) {
 
 Input.propTypes = {
   value: _propTypes.string,
-  color: (0, _propTypes.oneOf)(['primary', 'secondary', 'success', 'warning', 'danger']),
-  theme: (0, _propTypes.shape)({}).isRequired,
-  handleChange: _propTypes.func.isRequired
+  name: _propTypes.string.isRequired,
+  type: (0, _propTypes.oneOf)(['text', 'email', 'tel', 'select']).isRequired,
+  placeholder: _propTypes.string,
+  onChange: _propTypes.func.isRequired
 };
 Input.defaultProps = {
-  value: null,
-  color: 'primary'
+  value: '',
+  placeholder: 'Placeholder'
 };
-exports.default = (0, _theme.withTheme)(Input);
+exports.default = Input;

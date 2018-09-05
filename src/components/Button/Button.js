@@ -21,27 +21,21 @@ const Button = ({ text, outline, type }) => {
   }
   // check colors
   let backgroundColor = null;
-  let textColor = null;
   switch (type) {
     case 'secondary':
       backgroundColor = theme.colors.secondary;
-      textColor = theme.colors.buttonSecondaryText;
       break;
     case 'success':
       backgroundColor = theme.colors.success;
-      textColor = theme.colors.buttonSuccessText;
       break;
     case 'warning':
       backgroundColor = theme.colors.warning;
-      textColor = theme.colors.buttonWarningText;
       break;
     case 'danger':
       backgroundColor = theme.colors.danger;
-      textColor = theme.colors.buttonDangerText;
       break;
     default:
       backgroundColor = theme.colors.primary;
-      textColor = theme.colors.buttonPrimaryText;
       break;
   }
 
@@ -65,7 +59,7 @@ const Button = ({ text, outline, type }) => {
           }
           button.default {
             background-color: ${backgroundColor};
-            color: ${textColor};
+            color: ${theme.colors.white};
             outline: none;
           }
           button.default:hover {

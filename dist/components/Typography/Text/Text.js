@@ -52,11 +52,11 @@ var Text = function Text(_ref) {
       styles = _ref.styles;
   return _react2.default.createElement(
     'p',
-    { style: styles, className: _style2.default.dynamic([['3525336644', [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10, _styles2.default.spacing]]])
+    { style: styles, className: _style2.default.dynamic([['3805482701', [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10, _styles2.default.spacing]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '3525336644',
-      css: 'p.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ' text-align:' + align + ' font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ' white-space:' + (noWrap ? 'nowrap' : 'normal') + ' font-size:' + _styles2.default.font.size + 'px line-height:' + _styles2.default.font.size / 10 + ' margin-top:0 margin-bottom:' + _styles2.default.spacing + 'px;}',
+      styleId: '3805482701',
+      css: 'p.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ';text-align:' + align + ';font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ';white-space:' + (noWrap ? 'nowrap' : 'normal') + ';font-size:' + _styles2.default.font.size + 'px;line-height:' + _styles2.default.font.size / 10 + ';margin-top:0;margin-bottom:' + _styles2.default.spacing + 'px;}',
       dynamic: [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10, _styles2.default.spacing]
     }),
     text || children
