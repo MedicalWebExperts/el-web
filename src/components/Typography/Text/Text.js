@@ -1,16 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {
+  node, string, bool, oneOf, shape,
+} from 'prop-types';
 
 import theme from '../../../styles';
 
 const propTypes = {
-  children: PropTypes.node,
-  text: PropTypes.string,
-  color: PropTypes.oneOf(['primary', 'secondary', 'default']),
-  align: PropTypes.oneOf(['left', 'right', 'center', 'inherit', 'justify']),
-  noWrap: PropTypes.bool,
-  secondary: PropTypes.bool,
-  styles: PropTypes.shape({}),
+  children: node,
+  text: string,
+  color: oneOf(['primary', 'secondary', 'default']),
+  align: oneOf(['left', 'right', 'center', 'inherit', 'justify']),
+  noWrap: bool,
+  secondary: bool,
+  styles: shape({}),
 };
 
 const defaultProps = {

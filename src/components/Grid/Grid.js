@@ -1,15 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { node } from 'prop-types';
 
 const propTypes = {
-  children: PropTypes.node.isRequired,
+  children: node.isRequired,
 };
 
-const Grid = ({ children }) => (
-  <div>
-    {children}
-  </div>
-);
+const Grid = ({ children }) => <div>{children}</div>;
 
 Grid.propTypes = propTypes;
 

@@ -9,19 +9,6 @@ import Input from './components/Input/Input';
 import Avatar from './components/Avatar/Avatar';
 import Card from './components/Card/Card';
 
-module.exports = {
-  Grid,
-  Row,
-  Col,
-  H1,
-  H2,
-  H3,
-  H4,
-  H5,
-  H6,
-  Text,
-  Button,
-  Input,
-  Avatar,
-  Card,
+export {
+  Grid, Row, Col, H1, H2, H3, H4, H5, H6, Text, Button, Input, Avatar, Card,
 };
