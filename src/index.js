@@ -7,6 +7,7 @@ import {
 import Button from './components/Button/Button';
 import Input from './components/Input/Input';
 import Avatar from './components/Avatar/Avatar';
+import Card from './components/Card/Card';
 
 module.exports = {
   Grid,
@@ -22,4 +23,5 @@ module.exports = {
   Button,
   Input,
   Avatar,
+  Card,
 };
