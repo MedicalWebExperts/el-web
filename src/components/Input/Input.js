@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
-import {
-  string, oneOf, bool, func,
-} from 'prop-types';
+import { string, oneOf, func } from 'prop-types';
 
 import theme from '../../styles';
 
 class Input extends Component {
   static propTypes = {
-    label: string,
     value: string,
     name: string.isRequired,
     type: oneOf(['text', 'email', 'tel', 'select']).isRequired,
-    required: bool,
+    placeholder: string,
     onChange: func.isRequired,
   };
 
   static defaultProps = {
-    label: '',
     value: '',
-    required: false,
+    placeholder: 'Placeholder',
   };
 
   state = {
@@ -32,54 +28,36 @@ class Input extends Component {
   };
 
   render() {
-    const {
-      label, type, name, required,
-    } = this.props;
+    const { type, name, placeholder } = this.props;
     const { value } = this.state;
     return (
       <div>
         {
           <style jsx>
             {`
-              input {
-                text-align: center;
-                padding: 15px 30px;
-                font-size: 16px;
-                cursor: pointer;
-                font-weight: bold;
+              input,
+              select {
+                padding: 10px;
+                font-size: 14px;
                 border-radius: 4px;
-                border: none;
+                border-width: 1px;
+                border-style: solid;
+                background-color: ${theme.colors.white};
+                color: ${theme.colors.textTertiary};
+                border-color: ${theme.colors.textTertiary};
                 outline: none;
               }
               input:active,
               input:focus {
                 outline: none;
               }
-              input.default {
-                background-color: ${theme.colors.white};
-                color: ${theme.colors.textColor};
-                outline: none;
-              }
-              input.default:hover {
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-              }
-              input.default:active,
-              input.default:focus {
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-              }
-              input.outline {
-                background-color: ${theme.colors.transparent};
-                border: solid 1px ${theme.colors.primary};
-                color: ${theme.colors.primary};
-              }
-              input.outline:hover {
-                opacity: 0.8;
+              input::placeholder {
+                color: ${theme.colors.textTertiary};
+                font-style: italic;
               }
             `}
           </style>
         }
-        {/* eslint-disable */}
-        {label !== '' && <label>{label}</label>}
         {/* eslint-enable */}
         {type !== 'select' ? (
           <input
@@ -87,18 +65,10 @@ class Input extends Component {
             name={name}
             value={value}
             onChange={this.handleChange}
-            required={required}
-            className={inputClassName}
+            placeholder={placeholder}
           />
         ) : (
-          <select
-            type={type}
-            name={name}
-            defaultValue={value}
-            onChange={this.handleChange}
-            required={required}
-            className={selectClassName}
-          />
+          <select type={type} name={name} value={value} onChange={this.handleChange} />
         )}
       </div>
     );
