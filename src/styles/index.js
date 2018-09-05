@@ -1,6 +1,4 @@
 import colors from './colors';
-import typography from './components/Typography';
-import button from './components/Button';
 
 export default {
   font: {
@@ -9,7 +7,5 @@ export default {
     secondary: 'Georgia, "Times New Roman", Times, serif',
   },
   spacing: 25,
-  typography,
   colors,
-  button,
 };

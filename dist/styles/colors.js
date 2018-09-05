@@ -11,11 +11,8 @@ exports.default = {
   warning: '#FBC02D',
   danger: '#F44336',
   transparent: 'transparent',
-  textPrimary: '#0000ff',
-  textSecondary: '#00b33c',
-  buttonPrimaryText: '#FFFFFF',
-  buttonSecondaryText: '#FFFFFF',
-  buttonSuccessText: '#FFFFFF',
-  buttonWarningText: '#FFFFFF',
-  buttonDangerText: '#FFFFFF'
+  textPrimary: '#000000',
+  textSecondary: '#444444',
+  textTertiary: '#888888',
+  white: '#FFFFFF'
 };

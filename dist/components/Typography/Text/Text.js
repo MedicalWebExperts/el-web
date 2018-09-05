@@ -16,7 +16,9 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _theme = require('../../../theme');
+var _styles = require('../../../styles');
+
+var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27,7 +29,6 @@ var propTypes = {
   align: _propTypes2.default.oneOf(['left', 'right', 'center', 'inherit', 'justify']),
   noWrap: _propTypes2.default.bool,
   secondary: _propTypes2.default.bool,
-  theme: _propTypes2.default.shape({}).isRequired,
   styles: _propTypes2.default.shape({})
 };
 
@@ -48,16 +49,15 @@ var Text = function Text(_ref) {
       align = _ref.align,
       noWrap = _ref.noWrap,
       secondary = _ref.secondary,
-      theme = _ref.theme,
       styles = _ref.styles;
   return _react2.default.createElement(
     'p',
-    { style: styles, className: _style2.default.dynamic([['3525336644', [theme.colors[color], align, secondary ? theme.font.secondary : theme.font.primary, noWrap ? 'nowrap' : 'normal', theme.font.size, theme.font.size / 10, theme.spacing]]])
+    { style: styles, className: _style2.default.dynamic([['3805482701', [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10, _styles2.default.spacing]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '3525336644',
-      css: 'p.__jsx-style-dynamic-selector{color:' + theme.colors[color] + ' text-align:' + align + ' font-family:' + (secondary ? theme.font.secondary : theme.font.primary) + ' white-space:' + (noWrap ? 'nowrap' : 'normal') + ' font-size:' + theme.font.size + 'px line-height:' + theme.font.size / 10 + ' margin-top:0 margin-bottom:' + theme.spacing + 'px;}',
-      dynamic: [theme.colors[color], align, secondary ? theme.font.secondary : theme.font.primary, noWrap ? 'nowrap' : 'normal', theme.font.size, theme.font.size / 10, theme.spacing]
+      styleId: '3805482701',
+      css: 'p.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ';text-align:' + align + ';font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ';white-space:' + (noWrap ? 'nowrap' : 'normal') + ';font-size:' + _styles2.default.font.size + 'px;line-height:' + _styles2.default.font.size / 10 + ';margin-top:0;margin-bottom:' + _styles2.default.spacing + 'px;}',
+      dynamic: [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10, _styles2.default.spacing]
     }),
     text || children
   );
@@ -65,4 +65,4 @@ var Text = function Text(_ref) {
 
 Text.propTypes = propTypes;
 Text.defaultProps = defaultProps;
-exports.default = (0, _theme.withTheme)(Text);
+exports.default = Text;

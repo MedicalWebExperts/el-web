@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from '../../theme';
 
 const propTypes = {
   image: PropTypes.string.isRequired,
@@ -12,20 +11,18 @@ const defaultProps = {
   size: 'normal',
 };
 
-const Avatar = ({
-  image, alt, size,
-}) => {
+const Avatar = ({ image, alt, size }) => {
   // check sizes
   let avatarWidth = null;
   switch (size) {
     case 'small':
       avatarWidth = '60px';
       break;
-    case 'normal':
-      avatarWidth = '100px';
-      break;
     case 'large':
       avatarWidth = '200px';
+      break;
+    default:
+      avatarWidth = '100px';
       break;
   }
 
@@ -33,14 +30,14 @@ const Avatar = ({
     <div>
       <style jsx>
         {`
-          img{
+          img {
             border-radius: 100%;
             display: block;
             width: ${avatarWidth};
           }
         `}
       </style>
-      <img src={image} alt={alt} size={size}/>
+      <img src={image} alt={alt} size={size} />
     </div>
   );
 };
@@ -48,4 +45,4 @@ const Avatar = ({
 Avatar.propTypes = propTypes;
 Avatar.defaultProps = defaultProps;
 
-export default withTheme(Avatar);
+export default Avatar;
