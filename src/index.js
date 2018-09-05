@@ -8,18 +8,6 @@ import Button from './components/Button/Button';
 import Input from './components/Input/Input';
 import Avatar from './components/Avatar/Avatar';
 
-module.exports = {
-  Grid,
-  Row,
-  Col,
-  H1,
-  H2,
-  H3,
-  H4,
-  H5,
-  H6,
-  Text,
-  Button,
-  Input,
-  Avatar,
+export {
+  Grid, Row, Col, H1, H2, H3, H4, H5, H6, Text, Button, Input, Avatar,
 };
