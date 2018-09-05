@@ -1,13 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {
+  string, bool, oneOf, shape,
+} from 'prop-types';
 
 import theme from '../../../styles';
 
 const propTypes = {
-  text: PropTypes.string.isRequired,
-  secondary: PropTypes.bool,
-  color: PropTypes.oneOf(['primary', 'secondary', 'default']),
-  styles: PropTypes.shape({}),
+  text: string.isRequired,
+  secondary: bool,
+  color: oneOf(['primary', 'secondary', 'default']),
+  styles: shape({}),
 };
 
 const defaultProps = {

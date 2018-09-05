@@ -1,17 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, oneOf, shape } from 'prop-types';
 
 const propTypes = {
-  image: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(['small', 'normal', 'large']),
+  image: string.isRequired,
+  alt: string.isRequired,
+  size: oneOf(['small', 'normal', 'large']),
+  styles: shape({}),
 };
 
 const defaultProps = {
   size: 'normal',
+  styles: {},
 };
 
-const Avatar = ({ image, alt, size }) => {
+const Avatar = ({
+  image, alt, size, styles,
+}) => {
   // check sizes
   let avatarWidth = null;
   switch (size) {
@@ -37,7 +41,7 @@ const Avatar = ({ image, alt, size }) => {
           }
         `}
       </style>
-      <img src={image} alt={alt} size={size} />
+      <img src={image} alt={alt} style={styles} />
     </div>
   );
 };

@@ -1,19 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {
+  string, bool, oneOf, shape,
+} from 'prop-types';
 import theme from '../../styles';
 
 const propTypes = {
-  text: PropTypes.string.isRequired,
-  outline: PropTypes.bool,
-  type: PropTypes.oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
+  text: string.isRequired,
+  outline: bool,
+  type: oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
+  styles: shape({}),
 };
 
 const defaultProps = {
   outline: false,
   type: 'primary',
+  styles: {},
 };
 
-const Button = ({ text, outline, type }) => {
+const Button = ({
+  text, outline, type, styles,
+}) => {
   // check type
   let buttonClassName = 'default';
   if (outline) {
@@ -79,7 +85,7 @@ const Button = ({ text, outline, type }) => {
           }
         `}
       </style>
-      <button type="button" className={buttonClassName}>
+      <button type="button" className={buttonClassName} style={styles}>
         {text}
       </button>
     </div>

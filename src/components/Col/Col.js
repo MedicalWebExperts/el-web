@@ -1,15 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { node } from 'prop-types';
 
 const propTypes = {
-  children: PropTypes.node.isRequired,
+  children: node.isRequired,
 };
 
-const Col = ({ children }) => (
-  <div>
-    {children}
-  </div>
-);
+const Col = ({ children }) => <div>{children}</div>;
 
 Col.propTypes = propTypes;
 
