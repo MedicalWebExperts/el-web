@@ -27,30 +27,29 @@ class Select extends Component {
   render() {
     const { options, styles } = this.props;
     const { selectedValue } = this.state;
+
     return (
       <div>
-        {
-          <style jsx>
-            {`
-              select {
-                padding: 10px;
-                font-size: 14px;
-                border-radius: 4px;
-                border-width: 1px;
-                border-style: solid;
-                background-color: ${theme.colors.white};
-                color: ${theme.colors.textTertiary};
-                border-color: ${theme.colors.textTertiary};
-                outline: none;
-                height: 40px;
-                min-width: 160px;
-              }
-              option {
-                color: ${theme.colors.textTertiary};
-              }
-            `}
-          </style>
-        }
+        <style jsx>
+          {`
+            select {
+              padding: 10px;
+              font-size: 14px;
+              border-radius: 4px;
+              border-width: 1px;
+              border-style: solid;
+              background-color: ${theme.colors.white};
+              color: ${theme.colors.textTertiary};
+              border-color: ${theme.colors.textTertiary};
+              outline: none;
+              height: 40px;
+              min-width: 160px;
+            }
+            option {
+              color: ${theme.colors.textTertiary};
+            }
+          `}
+        </style>
         <select value={selectedValue} onChange={this.handleChange} style={styles}>
           {options.map(({ id, name, value }) => (
             <option value={value} key={id}>

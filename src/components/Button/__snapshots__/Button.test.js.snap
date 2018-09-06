@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Button Snapshot added optional style inline prop 1`] = `
+<div
+  className="jsx-4144444428"
+>
+  <button
+    className="jsx-4144444428 default"
+    style={
+      Object {
+        "color": "#ccc",
+        "marginTop": "20px",
+      }
+    }
+    type="button"
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Component Button Snapshot using default values 1`] = `
+<div
+  className="jsx-4144444428"
+>
+  <button
+    className="jsx-4144444428 default"
+    style={Object {}}
+    type="button"
+  >
+    Button Test
+  </button>
+</div>
+`;
+
+exports[`Component Button Snapshot using other type button and style outline 1`] = `
+<div
+  className="jsx-2173278713"
+>
+  <button
+    className="jsx-2173278713 outline"
+    style={Object {}}
+    type="button"
+  >
+    Button Test
+  </button>
+</div>
+`;
