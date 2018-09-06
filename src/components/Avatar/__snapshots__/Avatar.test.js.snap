@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Avatar Snapshot diferent avatar size 1`] = `
+<div
+  className="jsx-1666591538"
+>
+  <img
+    alt="Avatar Test"
+    className="jsx-1666591538"
+    src="https://placehold.it/350x350"
+    style={Object {}}
+  />
+</div>
+`;
+
+exports[`Component Avatar Snapshot using custom styles 1`] = `
+<div
+  className="jsx-46401105"
+>
+  <img
+    alt="Avatar Test"
+    className="jsx-46401105"
+    src="https://placehold.it/350x350"
+    style={
+      Object {
+        "borderRadius": "20px",
+        "padding": "0",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Component Avatar Snapshot without arguments, take the default values 1`] = `
+<div
+  className="jsx-46401105"
+>
+  <img
+    alt="Avatar Test"
+    className="jsx-46401105"
+    src="https://placehold.it/350x350"
+    style={Object {}}
+  />
+</div>
+`;

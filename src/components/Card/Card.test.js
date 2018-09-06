@@ -11,7 +11,7 @@ const customStyles = {
   padding: '0',
 };
 
-describe('Component H1 Snapshot', () => {
+describe('Component Card Snapshot', () => {
   it('without arguments, take the default values', () => {
     const tree = renderer.create(<Card {...defaultProps} />).toJSON();
     expect(tree).toMatchSnapshot();

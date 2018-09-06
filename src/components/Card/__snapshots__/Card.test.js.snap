@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component H1 Snapshot using custom styles 1`] = `
+exports[`Component Card Snapshot using custom styles 1`] = `
 <div
   className="jsx-4045736156"
   style={
@@ -16,7 +16,7 @@ exports[`Component H1 Snapshot using custom styles 1`] = `
 </div>
 `;
 
-exports[`Component H1 Snapshot without arguments, take the default values 1`] = `
+exports[`Component Card Snapshot without arguments, take the default values 1`] = `
 <div
   className="jsx-4045736156"
   style={Object {}}
