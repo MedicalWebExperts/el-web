@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
-import { string, oneOf, func } from 'prop-types';
+import {
+  string, oneOf, func, shape,
+} from 'prop-types';
 
 import theme from '../../styles';
+import media from '../../utils/media';
 
 class Input extends Component {
   static propTypes = {
-    value: string,
     name: string.isRequired,
-    type: oneOf(['text', 'email', 'tel', 'select']).isRequired,
+    type: oneOf(['text', 'email', 'tel']).isRequired,
     placeholder: string,
     onChange: func.isRequired,
+    styles: shape({}),
   };
 
   static defaultProps = {
-    value: '',
     placeholder: 'Placeholder',
+    styles: {},
   };
 
   state = {
-    value: this.props.value,
+    value: '',
   };
 
   handleChange = (event) => {
@@ -28,15 +31,16 @@ class Input extends Component {
   };
 
   render() {
-    const { type, name, placeholder } = this.props;
+    const {
+      type, name, placeholder, styles,
+    } = this.props;
     const { value } = this.state;
     return (
       <div>
         {
           <style jsx>
             {`
-              input,
-              select {
+              input {
                 padding: 10px;
                 font-size: 14px;
                 border-radius: 4px;
@@ -46,6 +50,7 @@ class Input extends Component {
                 color: ${theme.colors.textTertiary};
                 border-color: ${theme.colors.textTertiary};
                 outline: none;
+                width: ${media.isMobile() ? '100%' : 'auto'};
               }
               input:active,
               input:focus {
@@ -58,17 +63,14 @@ class Input extends Component {
             `}
           </style>
         }
-        {type !== 'select' ? (
-          <input
-            type={type}
-            name={name}
-            value={value}
-            onChange={this.handleChange}
-            placeholder={placeholder}
-          />
-        ) : (
-          <select type={type} name={name} value={value} onChange={this.handleChange} />
-        )}
+        <input
+          style={styles}
+          type={type}
+          name={name}
+          value={value}
+          onChange={this.handleChange}
+          placeholder={placeholder}
+        />
       </div>
     );
   }

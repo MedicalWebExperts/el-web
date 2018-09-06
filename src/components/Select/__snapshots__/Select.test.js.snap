@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Select Snapshot added optional style inline prop 1`] = `
+<div
+  className="jsx-3202351177"
+>
+  <select
+    className="jsx-3202351177"
+    onChange={[Function]}
+    style={
+      Object {
+        "lineHeight": 2,
+        "marginTop": 30,
+      }
+    }
+    value=""
+  >
+    <option
+      className="jsx-3202351177"
+      value="tiger"
+    >
+      Tiger
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="cheetah"
+    >
+      Cheetah
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="giraffe"
+    >
+      Giraffe
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="monkey"
+    >
+      Monkey
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="wolf"
+    >
+      Wolf
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="duck"
+    >
+      Duck
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Component Select Snapshot without arguments, take the default values 1`] = `
+<div
+  className="jsx-3202351177"
+>
+  <select
+    className="jsx-3202351177"
+    onChange={[Function]}
+    style={Object {}}
+    value=""
+  >
+    <option
+      className="jsx-3202351177"
+      value="tiger"
+    >
+      Tiger
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="cheetah"
+    >
+      Cheetah
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="giraffe"
+    >
+      Giraffe
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="monkey"
+    >
+      Monkey
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="wolf"
+    >
+      Wolf
+    </option>
+    <option
+      className="jsx-3202351177"
+      value="duck"
+    >
+      Duck
+    </option>
+  </select>
+</div>
+`;
