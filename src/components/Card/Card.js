@@ -10,14 +10,12 @@ const defaultProps = {
   styles: {},
 };
 
-const Card = ({
-  styles, children,
-}) => (
+const Card = ({ styles, children }) => (
   <div style={styles}>
     <style jsx>
       {`
-        div{
-          box-shadow: 0 2px 4px rgba(0,0,0,.2);
+        div {
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
           padding: 10px;
           border-radius: 4px;
         }
