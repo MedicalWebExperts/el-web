@@ -5,6 +5,6 @@ import { Input } from '../src';
 
 export default () => {
   storiesOf('Input', module).add('Default', () => (
-    <Input onChange={() => null} placeholder="Name" name="Name" />
+    <Input type="text" onChange={() => null} placeholder="Name" name="Name" />
   ));
 };
