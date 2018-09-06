@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Select Snapshot added optional style inline prop 1`] = `
+<div>
+  <style
+    jsx={true}
+  >
+    
+              select {
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 4px;
+                border-width: 1px;
+                border-style: solid;
+                background-color: #FFFFFF;
+                color: #888888;
+                border-color: #888888;
+                outline: none;
+                height: 40px;
+                min-width: 160px;
+              }
+              option {
+                color: #888888;
+              }
+            
+  </style>
+  <select
+    onChange={[Function]}
+    style={
+      Object {
+        "lineHeight": 2,
+        "marginTop": 30,
+      }
+    }
+    value=""
+  >
+    <option
+      value="tiger"
+    >
+      Tiger
+    </option>
+    <option
+      value="cheetah"
+    >
+      Cheetah
+    </option>
+    <option
+      value="giraffe"
+    >
+      Giraffe
+    </option>
+    <option
+      value="monkey"
+    >
+      Monkey
+    </option>
+    <option
+      value="wolf"
+    >
+      Wolf
+    </option>
+    <option
+      value="duck"
+    >
+      Duck
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Component Select Snapshot without arguments, take the default values 1`] = `
+<div>
+  <style
+    jsx={true}
+  >
+    
+              select {
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 4px;
+                border-width: 1px;
+                border-style: solid;
+                background-color: #FFFFFF;
+                color: #888888;
+                border-color: #888888;
+                outline: none;
+                height: 40px;
+                min-width: 160px;
+              }
+              option {
+                color: #888888;
+              }
+            
+  </style>
+  <select
+    onChange={[Function]}
+    style={Object {}}
+    value=""
+  >
+    <option
+      value="tiger"
+    >
+      Tiger
+    </option>
+    <option
+      value="cheetah"
+    >
+      Cheetah
+    </option>
+    <option
+      value="giraffe"
+    >
+      Giraffe
+    </option>
+    <option
+      value="monkey"
+    >
+      Monkey
+    </option>
+    <option
+      value="wolf"
+    >
+      Wolf
+    </option>
+    <option
+      value="duck"
+    >
+      Duck
+    </option>
+  </select>
+</div>
+`;

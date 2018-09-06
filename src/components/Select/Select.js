@@ -7,6 +7,11 @@ class Select extends Component {
   static propTypes = {
     options: arrayOf(shape({})).isRequired,
     onChange: func.isRequired,
+    styles: shape({}),
+  };
+
+  static defaultProps = {
+    styles: {},
   };
 
   state = {
@@ -20,7 +25,7 @@ class Select extends Component {
   };
 
   render() {
-    const { options } = this.props;
+    const { options, styles } = this.props;
     const { selectedValue } = this.state;
     return (
       <div>
@@ -46,7 +51,7 @@ class Select extends Component {
             `}
           </style>
         }
-        <select value={selectedValue} onChange={this.handleChange}>
+        <select value={selectedValue} onChange={this.handleChange} style={styles}>
           {options.map(({ id, name, value }) => (
             <option value={value} key={id}>
               {name}

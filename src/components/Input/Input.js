@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { string, oneOf, func } from 'prop-types';
+import {
+  string, oneOf, func, shape,
+} from 'prop-types';
 
 import theme from '../../styles';
 import media from '../../utils/media';
@@ -10,10 +12,12 @@ class Input extends Component {
     type: oneOf(['text', 'email', 'tel']).isRequired,
     placeholder: string,
     onChange: func.isRequired,
+    styles: shape({}),
   };
 
   static defaultProps = {
     placeholder: 'Placeholder',
+    styles: {},
   };
 
   state = {
@@ -27,7 +31,9 @@ class Input extends Component {
   };
 
   render() {
-    const { type, name, placeholder } = this.props;
+    const {
+      type, name, placeholder, styles,
+    } = this.props;
     const { value } = this.state;
     return (
       <div>
@@ -58,6 +64,7 @@ class Input extends Component {
           </style>
         }
         <input
+          style={styles}
           type={type}
           name={name}
           value={value}
