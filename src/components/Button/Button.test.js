@@ -4,10 +4,10 @@ import Button from './Button';
 
 const defaultProps = {
   text: 'Button Test',
+  onClick: () => null,
 };
 
 const customProps = {
-  text: 'Button Test',
   outline: true,
   type: 'success',
 };
@@ -18,13 +18,20 @@ const customStyles = {
 };
 
 describe('Component Button Snapshot', () => {
+  beforeAll(() => {
+    Object.defineProperty(window, 'matchMedia', {
+      value: jest.fn(() => ({ matches: true })),
+    });
+  });
   it('using default values', () => {
     const tree = renderer.create(<Button {...defaultProps} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('using other type button and style outline', () => {
-    const tree = renderer.create(<Button {...customProps} />).toJSON();
+    const tree = renderer
+      .create(<Button {...Object.assign({}, defaultProps, customProps)} />)
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 

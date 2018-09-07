@@ -4,7 +4,8 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/no-extraneous-dependencies": [0],
-    "react/destructuring-assignment": ["always"]
+    "react/destructuring-assignment": ["always"],
+    "react/no-array-index-key": ["always"]
   },
   "globals": {
     "__DEV__": true

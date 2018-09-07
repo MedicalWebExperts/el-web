@@ -2,10 +2,11 @@
 
 exports[`Component Button Snapshot added optional style inline prop 1`] = `
 <div
-  className="jsx-4144444428"
+  className="jsx-2888778090"
 >
   <button
-    className="jsx-4144444428 default"
+    className="jsx-2888778090 default"
+    onClick={[Function]}
     style={
       Object {
         "color": "#ccc",
@@ -21,10 +22,11 @@ exports[`Component Button Snapshot added optional style inline prop 1`] = `
 
 exports[`Component Button Snapshot using default values 1`] = `
 <div
-  className="jsx-4144444428"
+  className="jsx-2888778090"
 >
   <button
-    className="jsx-4144444428 default"
+    className="jsx-2888778090 default"
+    onClick={[Function]}
     style={Object {}}
     type="button"
   >
@@ -35,10 +37,11 @@ exports[`Component Button Snapshot using default values 1`] = `
 
 exports[`Component Button Snapshot using other type button and style outline 1`] = `
 <div
-  className="jsx-2173278713"
+  className="jsx-2794312831"
 >
   <button
-    className="jsx-2173278713 outline"
+    className="jsx-2794312831 outline"
+    onClick={[Function]}
     style={Object {}}
     type="button"
   >

@@ -1,14 +1,16 @@
 import React from 'react';
 import {
-  string, bool, oneOf, shape,
+  string, bool, oneOf, shape, func,
 } from 'prop-types';
 import theme from '../../styles';
+import media from '../../utils/media';
 
 const propTypes = {
   text: string.isRequired,
   outline: bool,
   type: oneOf(['primary', 'secondary', 'success', 'warning', 'danger']),
   styles: shape({}),
+  onClick: func.isRequired,
 };
 
 const defaultProps = {
@@ -18,7 +20,7 @@ const defaultProps = {
 };
 
 const Button = ({
-  text, outline, type, styles,
+  text, outline, type, styles, onClick,
 }) => {
   // check type
   let buttonClassName = 'default';
@@ -49,24 +51,25 @@ const Button = ({
     <div>
       <style jsx>
         {`
+          div {
+            margin-bottom: ${media.isMobile() || media.isTablet() ? '20px' : '0'};
+            display: flex;
+          }
           button {
             text-align: center;
-            padding: 15px 30px;
-            font-size: 16px;
+            padding: 11px 30px;
+            font-size: 14px;
             cursor: pointer;
             font-weight: bold;
             border-radius: 4px;
             border: none;
             outline: none;
-          }
-          button:active,
-          button:focus {
-            outline: none;
+            width: 100%;
+            min-width: 160px;
           }
           button.default {
             background-color: ${backgroundColor};
             color: ${theme.colors.white};
-            outline: none;
           }
           button.default:hover {
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -85,7 +88,7 @@ const Button = ({
           }
         `}
       </style>
-      <button type="button" className={buttonClassName} style={styles}>
+      <button type="button" className={buttonClassName} style={styles} onClick={onClick}>
         {text}
       </button>
     </div>

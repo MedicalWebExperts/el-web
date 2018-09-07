@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component SearchForm Snapshot Renders a SearchForm 1`] = `
+<div
+  className="jsx-3270843699"
+  style={Object {}}
+>
+  <div
+    className="jsx-2910760301"
+  >
+    <input
+      className="jsx-2910760301"
+      name="name"
+      onChange={[Function]}
+      placeholder="name"
+      style={Object {}}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="jsx-2327929533"
+  >
+    <select
+      className="jsx-2327929533"
+      onChange={[Function]}
+      style={Object {}}
+      value=""
+    >
+      <option
+        className="jsx-2327929533"
+        default={true}
+        disabled={true}
+        value=""
+      >
+        animals
+      </option>
+      <option
+        className="jsx-2327929533"
+        value="tiger"
+      >
+        Tiger
+      </option>
+      <option
+        className="jsx-2327929533"
+        value="lion"
+      >
+        Lion
+      </option>
+      <option
+        className="jsx-2327929533"
+        value="panther"
+      >
+        Panther
+      </option>
+      <option
+        className="jsx-2327929533"
+        value="jaguar"
+      >
+        Jaguar
+      </option>
+    </select>
+  </div>
+  <div
+    className="jsx-2327929533"
+  >
+    <select
+      className="jsx-2327929533"
+      onChange={[Function]}
+      style={Object {}}
+      value=""
+    >
+      <option
+        className="jsx-2327929533"
+        default={true}
+        disabled={true}
+        value=""
+      >
+        gender
+      </option>
+      <option
+        className="jsx-2327929533"
+        value="male"
+      >
+        Male
+      </option>
+      <option
+        className="jsx-2327929533"
+        value="female"
+      >
+        Female
+      </option>
+    </select>
+  </div>
+  <div
+    className="jsx-2888778090"
+  >
+    <button
+      className="jsx-2888778090 outline"
+      onClick={[Function]}
+      style={Object {}}
+      type="button"
+    >
+      Advanced Search
+    </button>
+  </div>
+  <div
+    className="jsx-2888778090"
+  >
+    <button
+      className="jsx-2888778090 default"
+      onClick={[Function]}
+      style={Object {}}
+      type="button"
+    >
+      Search
+    </button>
+  </div>
+</div>
+`;
