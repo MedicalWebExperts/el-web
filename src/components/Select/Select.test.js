@@ -4,12 +4,12 @@ import renderer from 'react-test-renderer';
 import Select from './Select';
 
 const options = [
-  { id: 1, name: 'Tiger', value: 'tiger' },
-  { id: 2, name: 'Cheetah', value: 'cheetah' },
-  { id: 3, name: 'Giraffe', value: 'giraffe' },
-  { id: 4, name: 'Monkey', value: 'monkey' },
-  { id: 5, name: 'Wolf', value: 'wolf' },
-  { id: 6, name: 'Duck', value: 'duck' },
+  { name: 'Tiger', value: 'tiger' },
+  { name: 'Cheetah', value: 'cheetah' },
+  { name: 'Giraffe', value: 'giraffe' },
+  { name: 'Monkey', value: 'monkey' },
+  { name: 'Wolf', value: 'wolf' },
+  { name: 'Duck', value: 'duck' },
 ];
 
 const props = {
@@ -24,6 +24,11 @@ const customStyles = {
 };
 
 describe('Component Select Snapshot', () => {
+  beforeAll(() => {
+    Object.defineProperty(window, 'matchMedia', {
+      value: jest.fn(() => ({ matches: true })),
+    });
+  });
   it('without arguments, take the default values', () => {
     const tree = renderer.create(<Select {...props} />).toJSON();
     expect(tree).toMatchSnapshot();

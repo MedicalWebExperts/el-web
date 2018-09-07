@@ -27,7 +27,7 @@ class Input extends Component {
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({ value });
-    this.props.onChange({ [name]: value });
+    this.props.onChange({ name, value });
   };
 
   render() {
@@ -37,32 +37,30 @@ class Input extends Component {
     const { value } = this.state;
     return (
       <div>
-        {
-          <style jsx>
-            {`
-              input {
-                padding: 10px;
-                font-size: 14px;
-                border-radius: 4px;
-                border-width: 1px;
-                border-style: solid;
-                background-color: ${theme.colors.white};
-                color: ${theme.colors.textTertiary};
-                border-color: ${theme.colors.textTertiary};
-                outline: none;
-                width: ${media.isMobile() ? '100%' : 'auto'};
-              }
-              input:active,
-              input:focus {
-                outline: none;
-              }
-              input::placeholder {
-                color: ${theme.colors.textTertiary};
-                font-style: italic;
-              }
-            `}
-          </style>
-        }
+        <style jsx>
+          {`
+            div {
+              margin-bottom: ${media.isMobile() || media.isTablet() ? '20px' : '0'};
+              display: flex;
+            }
+            input {
+              padding: 10px;
+              font-size: 14px;
+              border-radius: 4px;
+              border-width: 1px;
+              border-style: solid;
+              background-color: ${theme.colors.white};
+              color: ${theme.colors.textTertiary};
+              border-color: ${theme.colors.textTertiary};
+              outline: none;
+              flex: 1;
+            }
+            input::placeholder {
+              color: ${theme.colors.textTertiary};
+              font-style: italic;
+            }
+          `}
+        </style>
         <input
           style={styles}
           type={type}

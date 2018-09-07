@@ -5,6 +5,7 @@ import Input from './Input';
 import Select from './Select';
 import Avatar from './Avatar';
 import Card from './Card';
+import SearchForm from './SearchForm';
 
 Grid();
 Typography();
@@ -13,3 +14,4 @@ Input();
 Select();
 Avatar();
 Card();
+SearchForm();

@@ -2,10 +2,10 @@
 
 exports[`Component Select Snapshot added optional style inline prop 1`] = `
 <div
-  className="jsx-3202351177"
+  className="jsx-2327929533"
 >
   <select
-    className="jsx-3202351177"
+    className="jsx-2327929533"
     onChange={[Function]}
     style={
       Object {
@@ -16,37 +16,43 @@ exports[`Component Select Snapshot added optional style inline prop 1`] = `
     value=""
   >
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
+      default={true}
+      disabled={true}
+      value=""
+    />
+    <option
+      className="jsx-2327929533"
       value="tiger"
     >
       Tiger
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="cheetah"
     >
       Cheetah
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="giraffe"
     >
       Giraffe
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="monkey"
     >
       Monkey
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="wolf"
     >
       Wolf
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="duck"
     >
       Duck
@@ -57,46 +63,52 @@ exports[`Component Select Snapshot added optional style inline prop 1`] = `
 
 exports[`Component Select Snapshot without arguments, take the default values 1`] = `
 <div
-  className="jsx-3202351177"
+  className="jsx-2327929533"
 >
   <select
-    className="jsx-3202351177"
+    className="jsx-2327929533"
     onChange={[Function]}
     style={Object {}}
     value=""
   >
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
+      default={true}
+      disabled={true}
+      value=""
+    />
+    <option
+      className="jsx-2327929533"
       value="tiger"
     >
       Tiger
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="cheetah"
     >
       Cheetah
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="giraffe"
     >
       Giraffe
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="monkey"
     >
       Monkey
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="wolf"
     >
       Wolf
     </option>
     <option
-      className="jsx-3202351177"
+      className="jsx-2327929533"
       value="duck"
     >
       Duck
