@@ -20,7 +20,9 @@ exports[`Component Select Snapshot added optional style inline prop 1`] = `
       default={true}
       disabled={true}
       value=""
-    />
+    >
+      this is a placeholder
+    </option>
     <option
       className="jsx-2327929533"
       value="tiger"
@@ -76,7 +78,9 @@ exports[`Component Select Snapshot without arguments, take the default values 1`
       default={true}
       disabled={true}
       value=""
-    />
+    >
+      this is a placeholder
+    </option>
     <option
       className="jsx-2327929533"
       value="tiger"
