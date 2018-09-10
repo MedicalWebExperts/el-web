@@ -1,13 +1,18 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, shape } from 'prop-types';
 import theme from '../../styles';
 
 const propTypes = {
   text: string.isRequired,
+  styles: shape({}),
 };
 
-const ListItem = ({ text }) => (
-  <li>
+const defaultProps = {
+  styles: {},
+};
+
+const Item = ({ text, styles }) => (
+  <li style={styles}>
     <style jsx>
       {`
         li {
@@ -37,5 +42,6 @@ const ListItem = ({ text }) => (
   </li>
 );
 
-ListItem.propTypes = propTypes;
-export default ListItem;
+Item.propTypes = propTypes;
+Item.defaultProps = defaultProps;
+export default Item;

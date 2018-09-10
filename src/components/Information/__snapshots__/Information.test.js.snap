@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Information Snapshot without arguments, take the default values 1`] = `
+<div
+  className="jsx-1402069295 information"
+>
+  <div
+    className="jsx-1402069295 information-item"
+  >
+    <h4
+      className="jsx-1352789389"
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      Year Joined
+    </h4>
+    <h5
+      className="jsx-3885586498"
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "normal",
+          "marginTop": 8,
+        }
+      }
+    >
+      1999
+    </h5>
+  </div>
+  <div
+    className="jsx-1402069295 information-item"
+  >
+    <h4
+      className="jsx-1352789389"
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      Medical School
+    </h4>
+    <h5
+      className="jsx-3885586498"
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "normal",
+          "marginTop": 8,
+        }
+      }
+    >
+      University of Texas Medical Branch, Galveston, TX., 1996
+    </h5>
+  </div>
+  <div
+    className="jsx-1402069295 information-item"
+  >
+    <h4
+      className="jsx-1352789389"
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      Residency
+    </h4>
+    <h5
+      className="jsx-3885586498"
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "normal",
+          "marginTop": 8,
+        }
+      }
+    >
+      John Peter Smith Hospital, Fort Worth, TX
+    </h5>
+  </div>
+  <div
+    className="jsx-1402069295 information-item"
+  >
+    <h4
+      className="jsx-1352789389"
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      Board Certification
+    </h4>
+    <h5
+      className="jsx-3885586498"
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "normal",
+          "marginTop": 8,
+        }
+      }
+    >
+      American Board of Family Medicine
+    </h5>
+  </div>
+  <div
+    className="jsx-1402069295 information-item"
+  >
+    <h4
+      className="jsx-1352789389"
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      Hospital Affilation
+    </h4>
+    <ul
+      className="jsx-1253930413"
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    >
+      <li
+        className="jsx-1154723179"
+        style={Object {}}
+      >
+        Arlington Memorial Hospital
+      </li>
+    </ul>
+  </div>
+  <div
+    className="jsx-1402069295 information-item"
+  >
+    <h4
+      className="jsx-1352789389"
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      Professional Organizations
+    </h4>
+    <ul
+      className="jsx-1253930413"
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    >
+      <li
+        className="jsx-1154723179"
+        style={Object {}}
+      >
+        American Medical Association
+      </li>
+      <li
+        className="jsx-1154723179"
+        style={Object {}}
+      >
+        Texas Medical Association
+      </li>
+      <li
+        className="jsx-1154723179"
+        style={Object {}}
+      >
+        American Academy of Family Physicians
+      </li>
+    </ul>
+  </div>
+  <div
+    className="jsx-1402069295 information-item"
+  >
+    <h4
+      className="jsx-1352789389"
+      style={
+        Object {
+          "fontSize": 16,
+        }
+      }
+    >
+      Professional Organizations
+    </h4>
+    <h5
+      className="jsx-3885586498"
+      style={
+        Object {
+          "fontSize": 16,
+          "fontWeight": "normal",
+          "marginTop": 8,
+        }
+      }
+    >
+      American Board of Family Medicine
+    </h5>
+    <ul
+      className="jsx-1253930413"
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    >
+      <li
+        className="jsx-1154723179"
+        style={Object {}}
+      >
+        American Medical Association
+      </li>
+      <li
+        className="jsx-1154723179"
+        style={Object {}}
+      >
+        Texas Medical Association
+      </li>
+      <li
+        className="jsx-1154723179"
+        style={Object {}}
+      >
+        American Academy of Family Physicians
+      </li>
+    </ul>
+  </div>
+</div>
+`;

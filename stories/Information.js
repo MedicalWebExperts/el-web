@@ -32,6 +32,15 @@ const data = [
       'American Academy of Family Physicians',
     ],
   },
+  {
+    title: 'Professional Organizations',
+    description: 'American Board of Family Medicine',
+    list: [
+      'American Medical Association',
+      'Texas Medical Association',
+      'American Academy of Family Physicians',
+    ],
+  },
 ];
 
 export default () => {

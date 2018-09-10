@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Item Snapshot using custom styles 1`] = `
+<li
+  className="jsx-1154723179"
+  style={
+    Object {
+      "padding": 20,
+    }
+  }
+>
+  Item test
+</li>
+`;
+
+exports[`Component Item Snapshot without arguments, take the default values 1`] = `
+<li
+  className="jsx-1154723179"
+  style={Object {}}
+>
+  Item test
+</li>
+`;

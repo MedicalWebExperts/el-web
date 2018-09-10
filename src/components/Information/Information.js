@@ -1,7 +1,9 @@
 import React from 'react';
 import { arrayOf, shape } from 'prop-types';
 import List from '../List/List';
-import { Text } from '../Typography';
+import { H4, H5 } from '../Typography';
+
+import theme from '../../styles';
 
 const propTypes = {
   data: arrayOf(shape({})).isRequired,
@@ -12,8 +14,8 @@ const Information = ({ data }) => (
     <style jsx>
       {`
         .information-item {
-          padding: 10px 0;
-          border-bottom: 1px solid #979797;
+          padding: 22px 0;
+          border-bottom: 1px solid #e4e4e4;
         }
 
         .information-item:last-child {
@@ -22,17 +24,16 @@ const Information = ({ data }) => (
       `}
     </style>
 
-    {data.map(({ title, description, list }) => (
-      <div className="information-item">
-        <Text align="left" color="default">
-          <strong>{title}</strong>
-        </Text>
+    {data.map(({ title, description, list }, index) => (
+      <div className="information-item" key={index}>
+        <H4 text={title} styles={{ fontSize: theme.font.size }} />
         {description && (
-          <Text align="left" color="default">
-            {description}
-          </Text>
+          <H5
+            text={description}
+            styles={{ fontWeight: 'normal', fontSize: theme.font.size, marginTop: 8 }}
+          />
         )}
-        {list && <List data={list} />}
+        {list && <List data={list} styles={{ marginTop: 8 }} />}
       </div>
     ))}
   </div>

@@ -10,6 +10,7 @@ import Select from './components/Select/Select';
 import Avatar from './components/Avatar/Avatar';
 import Card from './components/Card/Card';
 import SearchForm from './components/SearchForm/SearchForm';
+import Information from './components/Information/Information';
 
 export {
   Grid,
@@ -28,4 +29,5 @@ export {
   Select,
   Card,
   SearchForm,
+  Information,
 };
