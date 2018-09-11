@@ -7,6 +7,7 @@ import Avatar from './Avatar';
 import Card from './Card';
 import SearchForm from './SearchForm';
 import Information from './Information';
+import Map from './Map';
 
 Grid();
 Typography();
@@ -17,3 +18,4 @@ Avatar();
 Card();
 SearchForm();
 Information();
+Map();

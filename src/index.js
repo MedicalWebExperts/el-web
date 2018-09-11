@@ -11,6 +11,7 @@ import Avatar from './components/Avatar/Avatar';
 import Card from './components/Card/Card';
 import SearchForm from './components/SearchForm/SearchForm';
 import Information from './components/Information/Information';
+import Map from './components/Map/Map';
 
 export {
   Grid,
@@ -30,4 +31,5 @@ export {
   Card,
   SearchForm,
   Information,
+  Map,
 };
