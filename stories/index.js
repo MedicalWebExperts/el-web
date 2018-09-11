@@ -6,6 +6,7 @@ import Select from './Select';
 import Avatar from './Avatar';
 import Card from './Card';
 import SearchForm from './SearchForm';
+import Information from './Information';
 
 Grid();
 Typography();
@@ -15,3 +16,4 @@ Select();
 Avatar();
 Card();
 SearchForm();
+Information();

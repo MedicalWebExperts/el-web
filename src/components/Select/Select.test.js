@@ -14,6 +14,7 @@ const options = [
 
 const props = {
   name: 'select',
+  placeholder: 'this is a placeholder',
   onChange: () => null,
   options,
 };
