@@ -13,23 +13,23 @@ const defaultProps = {
   styles: {},
 };
 
-const customStyle = css`
+const style = css`
   border: 0;
 `;
 
-const style = { height: '100%', width: '100%' };
+const customStyle = { height: '100%', width: '100%' };
 
 const Map = ({ title, url, styles }) => (
   <iframe
     title={title}
     src={url}
-    height={style.height}
-    width={style.width}
+    height={customStyle.height}
+    width={customStyle.width}
     frameBorder="0"
     allowFullScreen
     style={styles}
   >
-    <style jsx>{customStyle}</style>
+    <style jsx>{style}</style>
   </iframe>
 );
 
