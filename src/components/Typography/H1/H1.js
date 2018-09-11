@@ -29,8 +29,7 @@ const H1 = ({
           font-family: ${secondary ? theme.font.secondary : theme.font.primary};
           font-size: ${theme.font.size * 3}px;
           line-height: ${theme.font.size / 10};
-          margin-top: 0;
-          margin-bottom: ${theme.spacing * 2}px;
+          margin: 0;
         }
       `}
     </style>

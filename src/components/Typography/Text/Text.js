@@ -38,8 +38,7 @@ const Text = ({
           white-space: ${noWrap ? 'nowrap' : 'normal'};
           font-size: ${theme.font.size}px;
           line-height: ${theme.font.size / 10};
-          margin-top: 0;
-          margin-bottom: ${theme.spacing}px;
+          margin: 0;
         }
       `}
     </style>
