@@ -2,10 +2,10 @@
 
 exports[`Component Information Snapshot without arguments, take the default values 1`] = `
 <div
-  className="jsx-1402069295 information"
+  className="jsx-3215497222 information"
 >
   <div
-    className="jsx-1402069295 information-item"
+    className="jsx-3215497222 information-item"
   >
     <h4
       className="jsx-1352789389"
@@ -31,7 +31,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
     </h5>
   </div>
   <div
-    className="jsx-1402069295 information-item"
+    className="jsx-3215497222 information-item"
   >
     <h4
       className="jsx-1352789389"
@@ -57,7 +57,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
     </h5>
   </div>
   <div
-    className="jsx-1402069295 information-item"
+    className="jsx-3215497222 information-item"
   >
     <h4
       className="jsx-1352789389"
@@ -83,7 +83,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
     </h5>
   </div>
   <div
-    className="jsx-1402069295 information-item"
+    className="jsx-3215497222 information-item"
   >
     <h4
       className="jsx-1352789389"
@@ -109,7 +109,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
     </h5>
   </div>
   <div
-    className="jsx-1402069295 information-item"
+    className="jsx-3215497222 information-item"
   >
     <h4
       className="jsx-1352789389"
@@ -122,7 +122,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
       Hospital Affilation
     </h4>
     <ul
-      className="jsx-1253930413"
+      className="jsx-3401328911"
       style={
         Object {
           "marginTop": 8,
@@ -130,7 +130,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
       }
     >
       <li
-        className="jsx-1154723179"
+        className="jsx-1051720404"
         style={Object {}}
       >
         Arlington Memorial Hospital
@@ -138,7 +138,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
     </ul>
   </div>
   <div
-    className="jsx-1402069295 information-item"
+    className="jsx-3215497222 information-item"
   >
     <h4
       className="jsx-1352789389"
@@ -151,7 +151,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
       Professional Organizations
     </h4>
     <ul
-      className="jsx-1253930413"
+      className="jsx-3401328911"
       style={
         Object {
           "marginTop": 8,
@@ -159,19 +159,19 @@ exports[`Component Information Snapshot without arguments, take the default valu
       }
     >
       <li
-        className="jsx-1154723179"
+        className="jsx-1051720404"
         style={Object {}}
       >
         American Medical Association
       </li>
       <li
-        className="jsx-1154723179"
+        className="jsx-1051720404"
         style={Object {}}
       >
         Texas Medical Association
       </li>
       <li
-        className="jsx-1154723179"
+        className="jsx-1051720404"
         style={Object {}}
       >
         American Academy of Family Physicians
@@ -179,7 +179,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
     </ul>
   </div>
   <div
-    className="jsx-1402069295 information-item"
+    className="jsx-3215497222 information-item"
   >
     <h4
       className="jsx-1352789389"
@@ -204,7 +204,7 @@ exports[`Component Information Snapshot without arguments, take the default valu
       American Board of Family Medicine
     </h5>
     <ul
-      className="jsx-1253930413"
+      className="jsx-3401328911"
       style={
         Object {
           "marginTop": 8,
@@ -212,19 +212,19 @@ exports[`Component Information Snapshot without arguments, take the default valu
       }
     >
       <li
-        className="jsx-1154723179"
+        className="jsx-1051720404"
         style={Object {}}
       >
         American Medical Association
       </li>
       <li
-        className="jsx-1154723179"
+        className="jsx-1051720404"
         style={Object {}}
       >
         Texas Medical Association
       </li>
       <li
-        className="jsx-1154723179"
+        className="jsx-1051720404"
         style={Object {}}
       >
         American Academy of Family Physicians
