@@ -3,7 +3,7 @@
 exports[`Component Map Snapshot diferent iframe title 1`] = `
 <iframe
   allowFullScreen={true}
-  className="jsx-1631902045"
+  className="jsx-237474413"
   frameBorder="0"
   height="100%"
   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.598992769137!2d-58.430499!3d-34.587728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x910a40368a2b8c66!2sChori!5e0!3m2!1sen!2sar!4v1536682900333"
@@ -16,7 +16,7 @@ exports[`Component Map Snapshot diferent iframe title 1`] = `
 exports[`Component Map Snapshot using custom styles 1`] = `
 <iframe
   allowFullScreen={true}
-  className="jsx-1631902045"
+  className="jsx-237474413"
   frameBorder="0"
   height="100%"
   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.598992769137!2d-58.430499!3d-34.587728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x910a40368a2b8c66!2sChori!5e0!3m2!1sen!2sar!4v1536682900333"
@@ -33,7 +33,7 @@ exports[`Component Map Snapshot using custom styles 1`] = `
 exports[`Component Map Snapshot without arguments, take the default values 1`] = `
 <iframe
   allowFullScreen={true}
-  className="jsx-1631902045"
+  className="jsx-237474413"
   frameBorder="0"
   height="100%"
   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.598992769137!2d-58.430499!3d-34.587728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x910a40368a2b8c66!2sChori!5e0!3m2!1sen!2sar!4v1536682900333"

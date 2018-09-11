@@ -14,7 +14,9 @@ const defaultProps = {
 };
 
 const style = css`
-  border: 0;
+  iframe {
+    border: 0;
+  }
 `;
 
 const customStyle = { height: '100%', width: '100%' };
