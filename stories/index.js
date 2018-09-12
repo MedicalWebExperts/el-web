@@ -9,6 +9,8 @@ import SearchForm from './SearchForm';
 import ProviderListItem from './ProviderListItem';
 import Icon from './Icon';
 import List from './List';
+import Information from './Information';
+import Map from './Map';
 
 Grid();
 Typography();
@@ -21,3 +23,5 @@ SearchForm();
 ProviderListItem();
 Icon();
 List();
+Information();
+Map();

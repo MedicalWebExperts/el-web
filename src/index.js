@@ -13,6 +13,8 @@ import SearchForm from './components/SearchForm/SearchForm';
 import ProviderListItem from './components/ProviderListItem/ProviderListItem';
 import Icon from './components/Icon/Icon';
 import List from './components/List/List';
+import Information from './components/Information/Information';
+import Map from './components/Map/Map';
 
 export {
   Grid,
@@ -34,4 +36,6 @@ export {
   ProviderListItem,
   Icon,
   List,
+  Information,
+  Map,
 };

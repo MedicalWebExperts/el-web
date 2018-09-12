@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component InformationList Snapshot using custom styles 1`] = `
+<ul
+  className="jsx-3401328911"
+  style={
+    Object {
+      "margin": 20,
+    }
+  }
+>
+  <li
+    className="jsx-1051720404"
+    style={Object {}}
+  >
+    American Medical Association
+  </li>
+  <li
+    className="jsx-1051720404"
+    style={Object {}}
+  >
+    Texas Medical Association
+  </li>
+  <li
+    className="jsx-1051720404"
+    style={Object {}}
+  >
+    American Academy of Family Physicians
+  </li>
+</ul>
+`;
+
+exports[`Component InformationList Snapshot without arguments, take the default values 1`] = `
+<ul
+  className="jsx-3401328911"
+  style={Object {}}
+>
+  <li
+    className="jsx-1051720404"
+    style={Object {}}
+  >
+    American Medical Association
+  </li>
+  <li
+    className="jsx-1051720404"
+    style={Object {}}
+  >
+    Texas Medical Association
+  </li>
+  <li
+    className="jsx-1051720404"
+    style={Object {}}
+  >
+    American Academy of Family Physicians
+  </li>
+</ul>
+`;
