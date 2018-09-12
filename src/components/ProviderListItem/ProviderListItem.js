@@ -60,33 +60,34 @@ const style = css`
 
 const customStyles = {
   name: {
-    fontSize: '22px',
+    fontSize: '18px',
   },
   comma: {
-    fontSize: '22px',
+    fontSize: '18px',
     fontWeight: 400,
     paddingRight: '5px',
   },
   title: {
-    fontSize: '22px',
+    fontSize: '18px',
     color: theme.colors.textSecondary,
     fontWeight: 400,
   },
   h4Title: {
-    fontSize: '16px',
+    fontSize: '14px',
     color: theme.colors.textSecondary,
     fontWeight: 400,
     paddingRight: 5,
     paddingLeft: 5,
   },
   h4: {
-    fontSize: '16px',
+    fontSize: '14px',
     color: theme.colors.textSecondary,
   },
   text: {
-    fontSize: 14,
+    fontSize: 12,
   },
   actionText: {
+    fontSize: 14,
     color: theme.colors.primary,
   },
 };
@@ -116,12 +117,24 @@ const ProviderListItem = ({
           </div>
 
           <div className="iconWrapper">
-            <Icon icon={faMedkit} size="sm" color={theme.colors.textSecondary} />
+            <Icon
+              icon={faMedkit}
+              size="sm"
+              color={theme.colors.textSecondary}
+              height="14px"
+              width="14px"
+            />
             <H4 text="Specialty:" styles={customStyles.h4Title} />
             <H4 text={specialty} styles={customStyles.h4} />
           </div>
           <div className="iconWrapper">
-            <Icon icon={faMapMarkerAlt} size="sm" color={theme.colors.textSecondary} />
+            <Icon
+              icon={faMapMarkerAlt}
+              size="sm"
+              color={theme.colors.textSecondary}
+              height="14px"
+              width="14px"
+            />
             <H4 text="Location:" styles={customStyles.h4Title} />
             <H4 text={location} styles={customStyles.h4} />
           </div>

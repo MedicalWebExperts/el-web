@@ -10,6 +10,8 @@ const propTypes = {
   size: string,
   color: string,
   className: string,
+  height: string,
+  width: string,
 };
 
 const defaultProps = {
@@ -17,16 +19,34 @@ const defaultProps = {
   size: 'xs',
   color: theme.colors.textPrimary,
   className: '',
+  height: '18px',
+  width: '18px',
+};
+
+const customStyles = {
+  height: '100%',
+  width: '100%',
 };
 
 const Icon = props => (
-  <FontAwesomeIcon
-    icon={props.icon}
-    size={props.size}
-    {...props}
-    color={props.color}
-    className={props.className}
-  />
+  <div className="icon">
+    <style jsx>
+      {`
+        div {
+          height: ${props.height};
+          width: ${props.width};
+        }
+      `}
+    </style>
+
+    <FontAwesomeIcon
+      icon={props.icon}
+      size={props.size}
+      {...props}
+      color={props.color}
+      style={{ ...customStyles, ...props.styles }}
+    />
+  </div>
 );
 
 Icon.propTypes = propTypes;
