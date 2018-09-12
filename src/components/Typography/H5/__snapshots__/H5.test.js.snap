@@ -2,7 +2,7 @@
 
 exports[`Component H5 Snapshot added optional style inline prop 1`] = `
 <h5
-  className="jsx-3885586498"
+  className="jsx-3157562509"
   style={
     Object {
       "lineHeight": 2,
@@ -16,7 +16,7 @@ exports[`Component H5 Snapshot added optional style inline prop 1`] = `
 
 exports[`Component H5 Snapshot primary color of the theme 1`] = `
 <h5
-  className="jsx-1042296840"
+  className="jsx-1037696199"
   style={Object {}}
 >
   Heading 5
@@ -25,7 +25,7 @@ exports[`Component H5 Snapshot primary color of the theme 1`] = `
 
 exports[`Component H5 Snapshot secondary font-family of the theme 1`] = `
 <h5
-  className="jsx-787249375"
+  className="jsx-4151565456"
   style={Object {}}
 >
   Heading 5
@@ -34,7 +34,7 @@ exports[`Component H5 Snapshot secondary font-family of the theme 1`] = `
 
 exports[`Component H5 Snapshot without arguments, take the default values 1`] = `
 <h5
-  className="jsx-3885586498"
+  className="jsx-3157562509"
   style={Object {}}
 >
   Heading 5

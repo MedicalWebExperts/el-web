@@ -6,7 +6,9 @@ import Select from './Select';
 import Avatar from './Avatar';
 import Card from './Card';
 import SearchForm from './SearchForm';
-import ListItem from './ListItem';
+import ProviderListItem from './ProviderListItem';
+import Icon from './Icon';
+import List from './List';
 
 Grid();
 Typography();
@@ -16,4 +18,6 @@ Select();
 Avatar();
 Card();
 SearchForm();
-ListItem();
+ProviderListItem();
+Icon();
+List();

@@ -2,7 +2,7 @@
 
 exports[`Component Card Snapshot using custom styles 1`] = `
 <div
-  className="jsx-4045736156"
+  className="jsx-1324345059"
   style={
     Object {
       "borderRadius": "20px",
@@ -10,19 +10,29 @@ exports[`Component Card Snapshot using custom styles 1`] = `
     }
   }
 >
-  <h1>
-    Card Test
-  </h1>
+  <a
+    className="jsx-1324345059"
+    href=""
+  >
+    <h1>
+      Card Test
+    </h1>
+  </a>
 </div>
 `;
 
 exports[`Component Card Snapshot without arguments, take the default values 1`] = `
 <div
-  className="jsx-4045736156"
+  className="jsx-1324345059"
   style={Object {}}
 >
-  <h1>
-    Card Test
-  </h1>
+  <a
+    className="jsx-1324345059"
+    href=""
+  >
+    <h1>
+      Card Test
+    </h1>
+  </a>
 </div>
 `;
