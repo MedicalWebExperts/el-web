@@ -4,6 +4,7 @@ import Card from './Card';
 
 const defaultProps = {
   children: <h1>Card Test</h1>,
+  onPress: '',
 };
 
 const customStyles = {

@@ -85,7 +85,11 @@ class SearchForm extends Component {
           );
         })}
         {(media.isMobile() || media.isTablet()) && (
-          <Button outline onClick={this.showAdvancedSearch} text="Advanced Search" />
+          <Button
+            outline
+            onClick={this.showAdvancedSearch}
+            text={advancedSearch ? 'Close Advanced Search' : 'Advanced Search'}
+          />
         )}
         <Button onClick={this.handleSearch} text={buttonText} />
       </div>

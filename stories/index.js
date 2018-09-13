@@ -6,6 +6,9 @@ import Select from './Select';
 import Avatar from './Avatar';
 import Card from './Card';
 import SearchForm from './SearchForm';
+import ProviderListItem from './ProviderListItem';
+import Icon from './Icon';
+import List from './List';
 import Information from './Information';
 import Map from './Map';
 
@@ -17,5 +20,8 @@ Select();
 Avatar();
 Card();
 SearchForm();
+ProviderListItem();
+Icon();
+List();
 Information();
 Map();
