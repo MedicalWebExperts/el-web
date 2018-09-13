@@ -13,16 +13,20 @@ import theme from '../../styles';
 const propTypes = {
   avatar: string.isRequired,
   name: string.isRequired,
-  title: string.isRequired,
-  description: string.isRequired,
-  location: string.isRequired,
-  specialty: string.isRequired,
+  title: string,
+  description: string,
+  location: string,
+  specialty: string,
   action: string.isRequired,
   actionText: string,
 };
 
 const defaultProps = {
   actionText: '',
+  title: '',
+  description: '',
+  location: '',
+  specialty: '',
 };
 
 const style = css`
@@ -37,11 +41,13 @@ const style = css`
   .innerWrapper {
     flex: 1;
     flex-direction: row;
+    align-items: center;
   }
   .infoWrapper {
     flex: 6;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 20px;
+    margin-top: -5px;
   }
   .textWrapper {
     align-items: center;

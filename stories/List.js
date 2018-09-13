@@ -49,6 +49,15 @@ const items = [
     action: '',
     actionText: 'View Profile',
   },
+  {
+    image: 'https://placehold.it/350x350',
+    name: 'John Doe',
+    title: 'MD',
+    specialty: 'Family Medicine',
+    location: 'Mansfield Clinic',
+    action: '',
+    actionText: 'View Profile',
+  },
 ];
 
 export default () => {
