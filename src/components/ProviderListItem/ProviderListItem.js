@@ -1,12 +1,10 @@
 import React from 'react';
 import { string } from 'prop-types';
 import css from 'styled-jsx/css';
-import { faMedkit, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-import Avatar from '../Avatar/Avatar';
+import ProviderData from '../ProviderData/ProviderData';
 import Card from '../Card/Card';
-import { H3, H4, Text } from '../Typography';
-import Icon from '../Icon/Icon';
+import { Text } from '../Typography';
 import media from '../../utils/media';
 import theme from '../../styles';
 
@@ -111,42 +109,14 @@ const ProviderListItem = ({
   <Card onPress={action}>
     <style jsx>{style}</style>
     <div className="mainWrapper">
-      <div className="innerWrapper">
-        <div>
-          <Avatar image={avatar} alt="Provider's image" />
-        </div>
-        <div className="infoWrapper">
-          <div className="textWrapper">
-            <H3 text={name} styles={customStyles.name} />
-            <H3 text="," styles={customStyles.comma} />
-            <H3 text={title} styles={customStyles.title} />
-          </div>
-
-          <div className="iconWrapper">
-            <Icon
-              icon={faMedkit}
-              size="sm"
-              color={theme.colors.textSecondary}
-              height="14px"
-              width="14px"
-            />
-            <H4 text="Specialty:" styles={customStyles.h4Title} />
-            <H4 text={specialty} styles={customStyles.h4} />
-          </div>
-          <div className="iconWrapper">
-            <Icon
-              icon={faMapMarkerAlt}
-              size="sm"
-              color={theme.colors.textSecondary}
-              height="14px"
-              width="14px"
-            />
-            <H4 text="Location:" styles={customStyles.h4Title} />
-            <H4 text={location} styles={customStyles.h4} />
-          </div>
-          <Text text={description} styles={customStyles.text} />
-        </div>
-      </div>
+      <ProviderData
+        avatar={avatar}
+        name={name}
+        title={title}
+        specialty={specialty}
+        location={location}
+        description={description}
+      />
       <div className="actionNameWrapper">
         <Text text={actionText} styles={customStyles.actionText} />
       </div>
