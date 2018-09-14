@@ -7,6 +7,7 @@ import Avatar from '../Avatar/Avatar';
 import { H3, H4, Text } from '../Typography';
 import Icon from '../Icon/Icon';
 import theme from '../../styles';
+import media from '../../utils/media';
 
 const propTypes = {
   avatar: string.isRequired,
@@ -30,14 +31,18 @@ const style = css`
   }
   .innerWrapper {
     flex: 1;
-    flex-direction: row;
+    flex-direction: ${media.isMobile() ? 'column' : 'row'};
     align-items: center;
+  }
+  .avatarWrapper {
+    margin-bottom: ${media.isMobile() ? '20px' : '0'};
   }
   .infoWrapper {
     flex: 6;
     flex-direction: column;
     padding-left: 20px;
     margin-top: -5px;
+    align-items: ${media.isMobile() ? 'center' : 'flex-start'};
   }
   .textWrapper {
     align-items: center;
@@ -87,7 +92,7 @@ const ProviderData = ({
 }) => (
   <div className="innerWrapper">
     <style jsx>{style}</style>
-    <div>
+    <div className="avatarWrapper">
       <Avatar image={avatar} alt="Provider's image" />
     </div>
     <div className="infoWrapper">

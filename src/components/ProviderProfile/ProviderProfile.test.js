@@ -34,6 +34,11 @@ const defaultProps = {
 };
 
 describe('Component ProviderProfile Snapshot', () => {
+  beforeAll(() => {
+    Object.defineProperty(window, 'matchMedia', {
+      value: jest.fn(() => ({ matches: true })),
+    });
+  });
   it('without arguments, take the default values', () => {
     const tree = renderer.create(<ProviderProfile {...defaultProps} />).toJSON();
     expect(tree).toMatchSnapshot();

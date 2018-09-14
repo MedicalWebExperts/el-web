@@ -14,7 +14,7 @@ const defaultProps = {
 describe('Component ProviderData Snapshot', () => {
   beforeAll(() => {
     Object.defineProperty(window, 'matchMedia', {
-      value: jest.fn(() => ({ matches: false })),
+      value: jest.fn(() => ({ matches: true })),
     });
   });
 

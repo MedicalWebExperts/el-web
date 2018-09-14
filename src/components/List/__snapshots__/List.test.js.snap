@@ -53,7 +53,7 @@ exports[`Component List Snapshot without arguments, take the default values 1`] 
         type="button"
       >
         <div
-          className="jsx-1440066777 icon"
+          className="jsx-994160201 icon"
         >
           <svg
             aria-hidden="true"
@@ -88,7 +88,7 @@ exports[`Component List Snapshot without arguments, take the default values 1`] 
         type="button"
       >
         <div
-          className="jsx-1440066777 icon"
+          className="jsx-994160201 icon"
         >
           <svg
             aria-hidden="true"

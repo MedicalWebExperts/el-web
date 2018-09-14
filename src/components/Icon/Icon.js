@@ -33,6 +33,7 @@ const Icon = props => (
     <style jsx>
       {`
         div {
+          display: flex
           height: ${props.height};
           width: ${props.width};
         }

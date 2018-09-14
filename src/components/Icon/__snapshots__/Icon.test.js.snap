@@ -2,7 +2,7 @@
 
 exports[`Component Icon Snapshot using custom props 1`] = `
 <div
-  className="jsx-1440066777 icon"
+  className="jsx-994160201 icon"
 >
   <svg
     aria-hidden="true"
@@ -46,7 +46,7 @@ exports[`Component Icon Snapshot using custom props 1`] = `
 
 exports[`Component Icon Snapshot without arguments, take the default values 1`] = `
 <div
-  className="jsx-1440066777 icon"
+  className="jsx-994160201 icon"
 >
   <svg
     aria-hidden="true"
