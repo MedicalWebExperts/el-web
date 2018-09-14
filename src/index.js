@@ -10,11 +10,13 @@ import Select from './components/Select/Select';
 import Avatar from './components/Avatar/Avatar';
 import Card from './components/Card/Card';
 import SearchForm from './components/SearchForm/SearchForm';
-import ProviderListItem from './components/ProviderListItem/ProviderListItem';
 import Icon from './components/Icon/Icon';
 import List from './components/List/List';
 import Information from './components/Information/Information';
 import Map from './components/Map/Map';
+import ProviderListItem from './components/ProviderListItem/ProviderListItem';
+import ProviderData from './components/ProviderData/ProviderData';
+import ProviderProfile from './components/ProviderProfile/ProviderProfile';
 
 export {
   Grid,
@@ -38,4 +40,6 @@ export {
   List,
   Information,
   Map,
+  ProviderData,
+  ProviderProfile,
 };

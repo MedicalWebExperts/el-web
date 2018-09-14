@@ -3,26 +3,10 @@ import renderer from 'react-test-renderer';
 
 import List from './List';
 
-const items = [
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-];
+const defaultProps = {
+  title: 'List',
+  items: [<div />, <div />],
+};
 
 describe('Component List Snapshot', () => {
   beforeAll(() => {
@@ -32,7 +16,7 @@ describe('Component List Snapshot', () => {
   });
 
   it('without arguments, take the default values', () => {
-    const tree = renderer.create(<List items={items} />).toJSON();
+    const tree = renderer.create(<List {...defaultProps} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

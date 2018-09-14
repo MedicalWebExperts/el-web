@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component List Snapshot without arguments, take the default values 1`] = `
+<div
+  className="jsx-2879538065"
+  style={Object {}}
+>
+  <div
+    className="jsx-2879538065 headerWrapper"
+  >
+    <div
+      className="jsx-2879538065 titleWrapper"
+    >
+      <h2
+        className="jsx-1969679612"
+        style={
+          Object {
+            "fontSize": 22,
+            "marginRight": 10,
+          }
+        }
+      >
+        2
+      </h2>
+      <h2
+        className="jsx-1969679612"
+        style={
+          Object {
+            "fontSize": 22,
+            "fontWeight": 400,
+          }
+        }
+      >
+        List
+      </h2>
+    </div>
+    <div
+      className="jsx-2879538065 changeViewWrapper"
+    >
+      <p
+        className="jsx-3515229906"
+        style={
+          Object {
+            "color": "#444444",
+          }
+        }
+      >
+        Change View
+      </p>
+      <button
+        className="jsx-2879538065 icon centerIcon"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="jsx-1440066777 icon"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-sliders-h fa-w-16 fa-2x "
+            color="#444444"
+            data-icon="sliders-h"
+            data-prefix="fas"
+            height="18px"
+            role="img"
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+            styles={Object {}}
+            viewBox="0 0 512 512"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M496 384H160v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h80v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h336c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160h-80v-16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h336v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h80c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm0-160H288V48c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v16H16C7.2 64 0 71.2 0 80v32c0 8.8 7.2 16 16 16h208v16c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-16h208c8.8 0 16-7.2 16-16V80c0-8.8-7.2-16-16-16z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </button>
+      <button
+        className="jsx-2879538065 icon"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="jsx-1440066777 icon"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-grip-horizontal fa-w-14 fa-2x "
+            color="#2d95e5"
+            data-icon="grip-horizontal"
+            data-prefix="fas"
+            height="18px"
+            role="img"
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+            styles={Object {}}
+            viewBox="0 0 448 512"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M96 288H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zM96 96H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div
+    className="jsx-2879538065 itemsWrapper"
+  >
+    <div
+      className="jsx-2879538065 itemWrapper"
+    >
+      <div />
+    </div>
+    <div
+      className="jsx-2879538065 itemWrapper"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
