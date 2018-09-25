@@ -1,70 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { List, ProviderListItem } from '../src';
-
-const items = [
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-  {
-    image: 'https://placehold.it/350x350',
-    name: 'John Doe',
-    title: 'MD',
-    specialty: 'Family Medicine',
-    location: 'Mansfield Clinic',
-    action: '',
-    actionText: 'View Profile',
-  },
-];
+import { List, ListItem } from '../src';
+import providers from '../mocks/providers';
+import locations from '../mocks/locations';
 
 export default () => {
-  storiesOf('List', module).add('List Default', () => (
+  storiesOf('List', module).add('List Providers', () => (
     <List
-      items={items.map(item => (
-        <ProviderListItem
+      items={providers.map(item => (
+        <ListItem
           avatar={item.image}
           name={item.name}
           title={item.title}
@@ -72,6 +17,22 @@ export default () => {
           location={item.location}
           description={item.description}
           secondaryDescription={item.secondaryDescription}
+          action={item.action}
+          actionText={item.actionText}
+        />
+      ))}
+    />
+  ));
+  storiesOf('List', module).add('List Locations', () => (
+    <List
+      items={locations.map(item => (
+        <ListItem
+          type={item.type}
+          avatar={item.image}
+          name={item.name}
+          address={item.address}
+          city={item.city}
+          state={item.state}
           action={item.action}
           actionText={item.actionText}
         />
