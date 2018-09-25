@@ -34,11 +34,6 @@ const props = {
 };
 
 describe('Component SearchForm Snapshot', () => {
-  beforeAll(() => {
-    Object.defineProperty(window, 'matchMedia', {
-      value: jest.fn(() => ({ matches: true })),
-    });
-  });
   it('Renders a SearchForm', () => {
     const tree = renderer.create(<SearchForm {...props} />).toJSON();
     expect(tree).toMatchSnapshot();

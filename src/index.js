@@ -11,9 +11,9 @@ import Icon from './components/Icon/Icon';
 import List from './components/List/List';
 import Information from './components/Information/Information';
 import Map from './components/Map/Map';
-import ProviderListItem from './components/ProviderListItem/ProviderListItem';
-import ProviderData from './components/ProviderData/ProviderData';
-import ProviderProfile from './components/ProviderProfile/ProviderProfile';
+import ListItem from './components/ListItem/ListItem';
+import Data from './components/Data/Data';
+import Profile from './components/Profile/Profile';
 
 export {
   H1,
@@ -29,11 +29,11 @@ export {
   Select,
   Card,
   SearchForm,
-  ProviderListItem,
+  ListItem,
   Icon,
   List,
   Information,
   Map,
-  ProviderData,
-  ProviderProfile,
+  Data,
+  Profile,
 };

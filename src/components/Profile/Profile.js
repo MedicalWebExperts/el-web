@@ -3,7 +3,7 @@ import { shape, string } from 'prop-types';
 import css from 'styled-jsx/css';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-import ProviderData from '../ProviderData/ProviderData';
+import Data from '../Data/Data';
 import Information from '../Information/Information';
 import Map from '../Map/Map';
 import Icon from '../Icon/Icon';
@@ -11,7 +11,7 @@ import media from '../../utils/media';
 
 const propTypes = {
   styles: shape({}),
-  provider: shape({}).isRequired,
+  data: shape({}).isRequired,
   onPress: string,
 };
 
@@ -46,7 +46,7 @@ const style = css`
   }
 `;
 
-const ProviderProfile = ({ styles, provider, onPress }) => (
+const Profile = ({ styles, data, onPress }) => (
   <div style={styles} className="wrapper">
     <style jsx>{style}</style>
     <div className="providerWrapper">
@@ -56,24 +56,17 @@ const ProviderProfile = ({ styles, provider, onPress }) => (
         </a>
       </div>
       <div className="providerData">
-        <ProviderData
-          avatar={provider.avatar}
-          name={provider.name}
-          title={provider.title}
-          description={provider.description}
-          location={provider.location}
-          specialty={provider.specialty}
-        />
+        <Data {...data} />
       </div>
     </div>
     <div className="informationWrapper">
-      <Information data={provider.information} />
-      <Map url={provider.map} />
+      <Information data={data.information} />
+      <Map url={data.map} />
     </div>
   </div>
 );
 
-ProviderProfile.propTypes = propTypes;
-ProviderProfile.defaultProps = defaultProps;
+Profile.propTypes = propTypes;
+Profile.defaultProps = defaultProps;
 
-export default ProviderProfile;
+export default Profile;

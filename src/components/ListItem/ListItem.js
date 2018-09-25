@@ -1,20 +1,24 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, oneOf } from 'prop-types';
 import css from 'styled-jsx/css';
 
-import ProviderData from '../ProviderData/ProviderData';
+import Data from '../Data/Data';
 import Card from '../Card/Card';
 import { Text } from '../Typography';
 import media from '../../utils/media';
 import theme from '../../styles';
 
 const propTypes = {
+  type: oneOf(['location', 'provider']).isRequired,
   avatar: string.isRequired,
   name: string.isRequired,
   title: string,
   description: string,
   location: string,
   specialty: string,
+  address: string,
+  city: string,
+  state: string,
   action: string.isRequired,
   actionText: string,
 };
@@ -25,6 +29,9 @@ const defaultProps = {
   description: '',
   location: '',
   specialty: '',
+  address: '',
+  city: '',
+  state: '',
 };
 
 const style = css`
@@ -96,27 +103,11 @@ const customStyles = {
   },
 };
 
-const ProviderListItem = ({
-  avatar,
-  name,
-  title,
-  specialty,
-  location,
-  description,
-  action,
-  actionText,
-}) => (
+const ListItem = ({ action, actionText, ...props }) => (
   <Card onPress={action}>
     <style jsx>{style}</style>
     <div className="mainWrapper">
-      <ProviderData
-        avatar={avatar}
-        name={name}
-        title={title}
-        specialty={specialty}
-        location={location}
-        description={description}
-      />
+      <Data {...props} />
       <div className="actionNameWrapper">
         <Text text={actionText} styles={customStyles.actionText} />
       </div>
@@ -124,7 +115,7 @@ const ProviderListItem = ({
   </Card>
 );
 
-ProviderListItem.propTypes = propTypes;
-ProviderListItem.defaultProps = defaultProps;
+ListItem.propTypes = propTypes;
+ListItem.defaultProps = defaultProps;
 
-export default ProviderListItem;
+export default ListItem;

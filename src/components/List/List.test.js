@@ -9,12 +9,6 @@ const defaultProps = {
 };
 
 describe('Component List Snapshot', () => {
-  beforeAll(() => {
-    Object.defineProperty(window, 'matchMedia', {
-      value: jest.fn(() => ({ matches: false })),
-    });
-  });
-
   it('without arguments, take the default values', () => {
     const tree = renderer.create(<List {...defaultProps} />).toJSON();
     expect(tree).toMatchSnapshot();

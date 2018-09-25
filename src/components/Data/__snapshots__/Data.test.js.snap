@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component ProviderData Snapshot without arguments, take the default values 1`] = `
+exports[`Component Data Snapshot without arguments, take the location props 1`] = `
 <div
-  className="jsx-9121096 innerWrapper"
+  className="jsx-104758423 innerWrapper"
 >
   <div
-    className="jsx-9121096"
+    className="jsx-104758423 avatarWrapper"
   >
     <div
       className="jsx-46401105"
@@ -13,15 +13,113 @@ exports[`Component ProviderData Snapshot without arguments, take the default val
       <img
         alt="Provider's image"
         className="jsx-46401105"
+        src="https://placehold.it/350x350"
         style={Object {}}
       />
     </div>
   </div>
   <div
-    className="jsx-9121096 infoWrapper"
+    className="jsx-104758423 infoWrapper"
   >
     <div
-      className="jsx-9121096 textWrapper"
+      className="jsx-104758423 textWrapper"
+    >
+      <h3
+        className="jsx-958193894"
+        style={
+          Object {
+            "fontSize": "18px",
+          }
+        }
+      >
+        Albuquerque Urgent Care
+      </h3>
+    </div>
+    <div
+      className="jsx-104758423 iconWrapper"
+    >
+      <div
+        className="jsx-234058185 icon"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-map-marker-alt fa-w-12 fa-sm "
+          color="#444444"
+          data-icon="map-marker-alt"
+          data-prefix="fas"
+          height="14px"
+          role="img"
+          style={
+            Object {
+              "height": "100%",
+              "width": "100%",
+            }
+          }
+          styles={Object {}}
+          viewBox="0 0 384 512"
+          width="14px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+      <h4
+        className="jsx-610941067"
+        style={
+          Object {
+            "color": "#444444",
+            "fontSize": "14px",
+            "fontWeight": 400,
+            "paddingLeft": 5,
+            "paddingRight": 5,
+          }
+        }
+      >
+        Address:
+      </h4>
+      <h4
+        className="jsx-610941067"
+        style={
+          Object {
+            "color": "#444444",
+            "fontSize": "14px",
+          }
+        }
+      >
+        Street 1, Albuquerque, New Mexico
+      </h4>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Component Data Snapshot without arguments, take the provider props 1`] = `
+<div
+  className="jsx-104758423 innerWrapper"
+>
+  <div
+    className="jsx-104758423 avatarWrapper"
+  >
+    <div
+      className="jsx-46401105"
+    >
+      <img
+        alt="Provider's image"
+        className="jsx-46401105"
+        src="https://placehold.it/350x350"
+        style={Object {}}
+      />
+    </div>
+  </div>
+  <div
+    className="jsx-104758423 infoWrapper"
+  >
+    <div
+      className="jsx-104758423 textWrapper"
     >
       <h3
         className="jsx-958193894"
@@ -59,10 +157,10 @@ exports[`Component ProviderData Snapshot without arguments, take the default val
       </h3>
     </div>
     <div
-      className="jsx-9121096 iconWrapper"
+      className="jsx-104758423 iconWrapper"
     >
       <div
-        className="jsx-4020043865 icon"
+        className="jsx-234058185 icon"
       >
         <svg
           aria-hidden="true"
@@ -117,10 +215,10 @@ exports[`Component ProviderData Snapshot without arguments, take the default val
       </h4>
     </div>
     <div
-      className="jsx-9121096 iconWrapper"
+      className="jsx-104758423 iconWrapper"
     >
       <div
-        className="jsx-4020043865 icon"
+        className="jsx-234058185 icon"
       >
         <svg
           aria-hidden="true"
