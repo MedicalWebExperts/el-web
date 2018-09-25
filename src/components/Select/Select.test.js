@@ -25,11 +25,6 @@ const customStyles = {
 };
 
 describe('Component Select Snapshot', () => {
-  beforeAll(() => {
-    Object.defineProperty(window, 'matchMedia', {
-      value: jest.fn(() => ({ matches: true })),
-    });
-  });
   it('without arguments, take the default values', () => {
     const tree = renderer.create(<Select {...props} />).toJSON();
     expect(tree).toMatchSnapshot();

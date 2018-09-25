@@ -3,7 +3,8 @@ import renderer from 'react-test-renderer';
 import ListItem from './ListItem';
 
 const providerProps = {
-  image: 'https://placehold.it/350x350',
+  type: 'provider',
+  avatar: 'https://placehold.it/350x350',
   name: 'John Doe',
   title: 'MD',
   specialty: 'Family Medicine',
@@ -15,7 +16,7 @@ const providerProps = {
 
 const locationProps = {
   type: 'location',
-  image: 'https://placehold.it/350x350',
+  avatar: 'https://placehold.it/350x350',
   name: 'Albuquerque Urgent Care',
   address: 'Street 1',
   city: 'Albuquerque',
@@ -25,12 +26,6 @@ const locationProps = {
 };
 
 describe('Component ListItem Snapshot', () => {
-  beforeAll(() => {
-    Object.defineProperty(window, 'matchMedia', {
-      value: jest.fn(() => ({ matches: false })),
-    });
-  });
-
   it('without arguments, take the provider values', () => {
     const tree = renderer.create(<ListItem {...providerProps} />).toJSON();
     expect(tree).toMatchSnapshot();

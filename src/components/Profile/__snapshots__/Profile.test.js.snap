@@ -1,0 +1,633 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Profile Snapshot without arguments, take the location values 1`] = `
+<div
+  className="jsx-73113579 wrapper"
+  style={Object {}}
+>
+  <div
+    className="jsx-73113579 providerWrapper"
+  >
+    <div
+      className="jsx-73113579 arrow"
+    >
+      <a
+        className="jsx-73113579"
+        href=""
+      >
+        <div
+          className="jsx-994160201 icon"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-arrow-left fa-w-14 fa-8x "
+            color="#000000"
+            data-icon="arrow-left"
+            data-prefix="fas"
+            height="18px"
+            role="img"
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+            styles={Object {}}
+            viewBox="0 0 448 512"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </a>
+    </div>
+    <div
+      className="jsx-73113579 providerData"
+    >
+      <div
+        className="jsx-104758423 innerWrapper"
+      >
+        <div
+          className="jsx-104758423 avatarWrapper"
+        >
+          <div
+            className="jsx-46401105"
+          >
+            <img
+              alt="Provider's image"
+              className="jsx-46401105"
+              src="https://placehold.it/350x350"
+              style={Object {}}
+            />
+          </div>
+        </div>
+        <div
+          className="jsx-104758423 infoWrapper"
+        >
+          <div
+            className="jsx-104758423 textWrapper"
+          >
+            <h3
+              className="jsx-958193894"
+              style={
+                Object {
+                  "fontSize": "18px",
+                }
+              }
+            >
+              Albuquerque Urgent Care
+            </h3>
+          </div>
+          <div
+            className="jsx-104758423 iconWrapper"
+          >
+            <div
+              className="jsx-234058185 icon"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-map-marker-alt fa-w-12 fa-sm "
+                color="#444444"
+                data-icon="map-marker-alt"
+                data-prefix="fas"
+                height="14px"
+                role="img"
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+                styles={Object {}}
+                viewBox="0 0 384 512"
+                width="14px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+            <h4
+              className="jsx-610941067"
+              style={
+                Object {
+                  "color": "#444444",
+                  "fontSize": "14px",
+                  "fontWeight": 400,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              Address:
+            </h4>
+            <h4
+              className="jsx-610941067"
+              style={
+                Object {
+                  "color": "#444444",
+                  "fontSize": "14px",
+                }
+              }
+            >
+              Street 1, Albuquerque, New Mexico
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="jsx-73113579 informationWrapper"
+  >
+    <div
+      className="jsx-3215497222 information"
+    >
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Facility Type
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          Urgent Care
+        </h5>
+      </div>
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Insurance Accepted
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          Aetna, Amerigroup, Amerihealth Caritas DC, Blue Cross/Blue Shield MD
+        </h5>
+      </div>
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Phone
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          555-9999
+        </h5>
+      </div>
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Available hours
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          Noon to Midnight
+        </h5>
+      </div>
+    </div>
+    <iframe
+      allowFullScreen={true}
+      className="jsx-237474413"
+      frameBorder="0"
+      height="100%"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417918.1817301707!2d-106.95666690318821!3d35.082087678816144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220addd309837b%3A0xc0d3f8ceb8d9f6fd!2sAlbuquerque%2C+NM%2C+USA!5e0!3m2!1sen!2sar!4v1537560414085"
+      style={Object {}}
+      title="Map"
+      width="100%"
+    />
+  </div>
+</div>
+`;
+
+exports[`Component Profile Snapshot without arguments, take the provider values 1`] = `
+<div
+  className="jsx-73113579 wrapper"
+  style={Object {}}
+>
+  <div
+    className="jsx-73113579 providerWrapper"
+  >
+    <div
+      className="jsx-73113579 arrow"
+    >
+      <a
+        className="jsx-73113579"
+        href=""
+      >
+        <div
+          className="jsx-994160201 icon"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-arrow-left fa-w-14 fa-8x "
+            color="#000000"
+            data-icon="arrow-left"
+            data-prefix="fas"
+            height="18px"
+            role="img"
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+            styles={Object {}}
+            viewBox="0 0 448 512"
+            width="18px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </a>
+    </div>
+    <div
+      className="jsx-73113579 providerData"
+    >
+      <div
+        className="jsx-104758423 innerWrapper"
+      >
+        <div
+          className="jsx-104758423 avatarWrapper"
+        >
+          <div
+            className="jsx-46401105"
+          >
+            <img
+              alt="Provider's image"
+              className="jsx-46401105"
+              src="https://placehold.it/350x350"
+              style={Object {}}
+            />
+          </div>
+        </div>
+        <div
+          className="jsx-104758423 infoWrapper"
+        >
+          <div
+            className="jsx-104758423 textWrapper"
+          >
+            <h3
+              className="jsx-958193894"
+              style={
+                Object {
+                  "fontSize": "18px",
+                }
+              }
+            >
+              John Doe
+            </h3>
+            <h3
+              className="jsx-958193894"
+              style={
+                Object {
+                  "fontSize": "18px",
+                  "fontWeight": 400,
+                  "paddingRight": "5px",
+                }
+              }
+            >
+              ,
+            </h3>
+            <h3
+              className="jsx-958193894"
+              style={
+                Object {
+                  "color": "#444444",
+                  "fontSize": "18px",
+                  "fontWeight": 400,
+                }
+              }
+            >
+              MD
+            </h3>
+          </div>
+          <div
+            className="jsx-104758423 iconWrapper"
+          >
+            <div
+              className="jsx-234058185 icon"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-medkit fa-w-16 fa-sm "
+                color="#444444"
+                data-icon="medkit"
+                data-prefix="fas"
+                height="14px"
+                role="img"
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+                styles={Object {}}
+                viewBox="0 0 512 512"
+                width="14px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M96 480h320V128h-32V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H96v352zm96-384h128v32H192V96zm320 80v256c0 26.51-21.49 48-48 48h-16V128h16c26.51 0 48 21.49 48 48zM64 480H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v352zm288-208v32c0 8.837-7.163 16-16 16h-48v48c0 8.837-7.163 16-16 16h-32c-8.837 0-16-7.163-16-16v-48h-48c-8.837 0-16-7.163-16-16v-32c0-8.837 7.163-16 16-16h48v-48c0-8.837 7.163-16 16-16h32c8.837 0 16 7.163 16 16v48h48c8.837 0 16 7.163 16 16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+            <h4
+              className="jsx-610941067"
+              style={
+                Object {
+                  "color": "#444444",
+                  "fontSize": "14px",
+                  "fontWeight": 400,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              Specialty:
+            </h4>
+            <h4
+              className="jsx-610941067"
+              style={
+                Object {
+                  "color": "#444444",
+                  "fontSize": "14px",
+                }
+              }
+            >
+              Family Medicine
+            </h4>
+          </div>
+          <div
+            className="jsx-104758423 iconWrapper"
+          >
+            <div
+              className="jsx-234058185 icon"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-map-marker-alt fa-w-12 fa-sm "
+                color="#444444"
+                data-icon="map-marker-alt"
+                data-prefix="fas"
+                height="14px"
+                role="img"
+                style={
+                  Object {
+                    "height": "100%",
+                    "width": "100%",
+                  }
+                }
+                styles={Object {}}
+                viewBox="0 0 384 512"
+                width="14px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </div>
+            <h4
+              className="jsx-610941067"
+              style={
+                Object {
+                  "color": "#444444",
+                  "fontSize": "14px",
+                  "fontWeight": 400,
+                  "paddingLeft": 5,
+                  "paddingRight": 5,
+                }
+              }
+            >
+              Location:
+            </h4>
+            <h4
+              className="jsx-610941067"
+              style={
+                Object {
+                  "color": "#444444",
+                  "fontSize": "14px",
+                }
+              }
+            >
+              Mansfield Clinic
+            </h4>
+          </div>
+          <p
+            className="jsx-3515229906"
+            style={
+              Object {
+                "fontSize": 12,
+              }
+            }
+          >
+            This is a description, like a subtitle.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="jsx-73113579 informationWrapper"
+  >
+    <div
+      className="jsx-3215497222 information"
+    >
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Year Joined
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          1999
+        </h5>
+      </div>
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Medical School
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          University of Texas Medical Branch, Galveston, TX., 1996
+        </h5>
+      </div>
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Residency
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          John Peter Smith Hospital, Fort Worth, TX
+        </h5>
+      </div>
+      <div
+        className="jsx-3215497222 information-item"
+      >
+        <h4
+          className="jsx-610941067"
+          style={
+            Object {
+              "fontSize": 16,
+            }
+          }
+        >
+          Board Certification
+        </h4>
+        <h5
+          className="jsx-3157562509"
+          style={
+            Object {
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "marginTop": 8,
+            }
+          }
+        >
+          American Board of Family Medicine
+        </h5>
+      </div>
+    </div>
+    <iframe
+      allowFullScreen={true}
+      className="jsx-237474413"
+      frameBorder="0"
+      height="100%"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.598992769137!2d-58.430499!3d-34.587728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x910a40368a2b8c66!2sChori!5e0!3m2!1sen!2sar!4v1536682900333"
+      style={Object {}}
+      title="Map"
+      width="100%"
+    />
+  </div>
+</div>
+`;

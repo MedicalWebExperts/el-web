@@ -2,10 +2,10 @@
 
 exports[`Component Input Snapshot added optional style inline prop 1`] = `
 <div
-  className="jsx-2910760301"
+  className="jsx-212918199"
 >
   <input
-    className="jsx-2910760301"
+    className="jsx-212918199"
     name="input"
     onChange={[Function]}
     placeholder="Input"
@@ -23,10 +23,10 @@ exports[`Component Input Snapshot added optional style inline prop 1`] = `
 
 exports[`Component Input Snapshot without arguments, take the default values 1`] = `
 <div
-  className="jsx-2910760301"
+  className="jsx-212918199"
 >
   <input
-    className="jsx-2910760301"
+    className="jsx-212918199"
     name="input"
     onChange={[Function]}
     placeholder="Input"

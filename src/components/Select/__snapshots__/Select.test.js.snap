@@ -2,10 +2,10 @@
 
 exports[`Component Select Snapshot added optional style inline prop 1`] = `
 <div
-  className="jsx-2327929533"
+  className="jsx-2953334337"
 >
   <select
-    className="jsx-2327929533"
+    className="jsx-2953334337"
     onChange={[Function]}
     style={
       Object {
@@ -16,7 +16,7 @@ exports[`Component Select Snapshot added optional style inline prop 1`] = `
     value=""
   >
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       default={true}
       disabled={true}
       value=""
@@ -24,37 +24,37 @@ exports[`Component Select Snapshot added optional style inline prop 1`] = `
       this is a placeholder
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="tiger"
     >
       Tiger
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="cheetah"
     >
       Cheetah
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="giraffe"
     >
       Giraffe
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="monkey"
     >
       Monkey
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="wolf"
     >
       Wolf
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="duck"
     >
       Duck
@@ -65,16 +65,16 @@ exports[`Component Select Snapshot added optional style inline prop 1`] = `
 
 exports[`Component Select Snapshot without arguments, take the default values 1`] = `
 <div
-  className="jsx-2327929533"
+  className="jsx-2953334337"
 >
   <select
-    className="jsx-2327929533"
+    className="jsx-2953334337"
     onChange={[Function]}
     style={Object {}}
     value=""
   >
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       default={true}
       disabled={true}
       value=""
@@ -82,37 +82,37 @@ exports[`Component Select Snapshot without arguments, take the default values 1`
       this is a placeholder
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="tiger"
     >
       Tiger
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="cheetah"
     >
       Cheetah
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="giraffe"
     >
       Giraffe
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="monkey"
     >
       Monkey
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="wolf"
     >
       Wolf
     </option>
     <option
-      className="jsx-2327929533"
+      className="jsx-2953334337"
       value="duck"
     >
       Duck

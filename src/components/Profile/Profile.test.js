@@ -62,18 +62,13 @@ const locationProps = {
 };
 
 describe('Component Profile Snapshot', () => {
-  beforeAll(() => {
-    Object.defineProperty(window, 'matchMedia', {
-      value: jest.fn(() => ({ matches: true })),
-    });
-  });
   it('without arguments, take the provider values', () => {
-    const tree = renderer.create(<Profile {...providerProps} />).toJSON();
+    const tree = renderer.create(<Profile data={providerProps} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('without arguments, take the location values', () => {
-    const tree = renderer.create(<Profile {...locationProps} />).toJSON();
+    const tree = renderer.create(<Profile data={locationProps} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

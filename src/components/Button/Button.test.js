@@ -18,11 +18,6 @@ const customStyles = {
 };
 
 describe('Component Button Snapshot', () => {
-  beforeAll(() => {
-    Object.defineProperty(window, 'matchMedia', {
-      value: jest.fn(() => ({ matches: true })),
-    });
-  });
   it('using default values', () => {
     const tree = renderer.create(<Button {...defaultProps} />).toJSON();
     expect(tree).toMatchSnapshot();
