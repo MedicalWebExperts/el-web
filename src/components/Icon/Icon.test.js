@@ -6,7 +6,7 @@ import Icon from './Icon';
 
 const defaultProps = {
   icon: faCoffee,
-  size: 'md',
+  size: 'lg',
 };
 
 const customProps = {

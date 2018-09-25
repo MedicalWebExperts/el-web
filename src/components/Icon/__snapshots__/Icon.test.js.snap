@@ -6,7 +6,7 @@ exports[`Component Icon Snapshot using custom props 1`] = `
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-coffee fa-w-20 fa-spin fa-md "
+    className="svg-inline--fa fa-coffee fa-w-20 fa-spin fa-lg "
     color="#000000"
     data-icon="coffee"
     data-prefix="fas"
@@ -50,7 +50,7 @@ exports[`Component Icon Snapshot without arguments, take the default values 1`] 
 >
   <svg
     aria-hidden="true"
-    className="svg-inline--fa fa-coffee fa-w-20 fa-md "
+    className="svg-inline--fa fa-coffee fa-w-20 fa-lg "
     color="#000000"
     data-icon="coffee"
     data-prefix="fas"
