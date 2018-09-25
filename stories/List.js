@@ -2,15 +2,16 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { List, ListItem } from '../src';
-import providers from '../mocks/providers';
-import locations from '../mocks/locations';
+import { providers } from '../mocks/providers';
+import { locations } from '../mocks/locations';
 
 export default () => {
   storiesOf('List', module).add('List Providers', () => (
     <List
       items={providers.map(item => (
         <ListItem
-          avatar={item.image}
+          type={item.type}
+          avatar={item.avatar}
           name={item.name}
           title={item.title}
           specialty={item.specialty}
@@ -28,7 +29,7 @@ export default () => {
       items={locations.map(item => (
         <ListItem
           type={item.type}
-          avatar={item.image}
+          avatar={item.avatar}
           name={item.name}
           address={item.address}
           city={item.city}

@@ -2,26 +2,17 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { ListItem } from '../src';
+import { basicProvider } from '../mocks/providers';
+import { basicLocation } from '../mocks/locations';
 
 const provider = {
-  type: 'provider',
-  image: 'https://placehold.it/350x350',
-  name: 'John Doe',
-  title: 'MD',
-  specialty: 'Family Medicine',
-  location: 'Mansfield Clinic',
-  description: 'This is a description, like a subtitle.',
+  ...basicProvider,
   action: '',
   actionText: 'View Profile',
 };
 
 const location = {
-  type: 'location',
-  image: 'https://placehold.it/350x350',
-  name: 'Albuquerque Urgent Care',
-  address: 'Street 1',
-  city: 'Albuquerque',
-  state: 'New Mexico',
+  ...basicLocation,
   action: '',
   actionText: 'View Location',
 };
@@ -30,7 +21,7 @@ export default () => {
   storiesOf('ListItem', module).add('ProviderListItem', () => (
     <ListItem
       type={provider.type}
-      avatar={provider.image}
+      avatar={provider.avatar}
       name={provider.name}
       title={provider.title}
       specialty={provider.specialty}
@@ -45,7 +36,7 @@ export default () => {
   storiesOf('ListItem', module).add('LocationListItem', () => (
     <ListItem
       type={location.type}
-      avatar={location.image}
+      avatar={location.avatar}
       name={location.name}
       address={location.address}
       city={location.city}
