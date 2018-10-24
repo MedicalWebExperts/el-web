@@ -14,24 +14,25 @@ var _react2 = _interopRequireDefault(_react);
 
 var _propTypes = require('prop-types');
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var propTypes = {
-  image: _propTypes2.default.string.isRequired,
-  alt: _propTypes2.default.string.isRequired,
-  size: _propTypes2.default.oneOf(['small', 'normal', 'large'])
+  image: _propTypes.string.isRequired,
+  alt: _propTypes.string.isRequired,
+  size: (0, _propTypes.oneOf)(['small', 'normal', 'large']),
+  styles: (0, _propTypes.shape)({})
 };
 
 var defaultProps = {
-  size: 'normal'
+  size: 'normal',
+  styles: {}
 };
 
 var Avatar = function Avatar(_ref) {
   var image = _ref.image,
       alt = _ref.alt,
-      size = _ref.size;
+      size = _ref.size,
+      styles = _ref.styles;
 
   // check sizes
   var avatarWidth = null;
@@ -57,7 +58,7 @@ var Avatar = function Avatar(_ref) {
       css: 'img.__jsx-style-dynamic-selector{border-radius:100%;display:block;width:' + avatarWidth + ';}',
       dynamic: [avatarWidth]
     }),
-    _react2.default.createElement('img', { src: image, alt: alt, size: size, className: _style2.default.dynamic([['1524354918', [avatarWidth]]])
+    _react2.default.createElement('img', { src: image, alt: alt, style: styles, className: _style2.default.dynamic([['1524354918', [avatarWidth]]])
     })
   );
 };

@@ -14,8 +14,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _propTypes = require('prop-types');
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
 var _styles = require('../../../styles');
 
 var _styles2 = _interopRequireDefault(_styles);
@@ -23,13 +21,13 @@ var _styles2 = _interopRequireDefault(_styles);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var propTypes = {
-  children: _propTypes2.default.node,
-  text: _propTypes2.default.string,
-  color: _propTypes2.default.oneOf(['primary', 'secondary', 'default']),
-  align: _propTypes2.default.oneOf(['left', 'right', 'center', 'inherit', 'justify']),
-  noWrap: _propTypes2.default.bool,
-  secondary: _propTypes2.default.bool,
-  styles: _propTypes2.default.shape({})
+  children: _propTypes.node,
+  text: _propTypes.string,
+  color: (0, _propTypes.oneOf)(['primary', 'secondary', 'default']),
+  align: (0, _propTypes.oneOf)(['left', 'right', 'center', 'inherit', 'justify']),
+  noWrap: _propTypes.bool,
+  secondary: _propTypes.bool,
+  styles: (0, _propTypes.shape)({})
 };
 
 var defaultProps = {
@@ -52,12 +50,12 @@ var Text = function Text(_ref) {
       styles = _ref.styles;
   return _react2.default.createElement(
     'p',
-    { style: styles, className: _style2.default.dynamic([['3805482701', [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10, _styles2.default.spacing]]])
+    { style: styles, className: _style2.default.dynamic([['10965609', [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '3805482701',
-      css: 'p.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ';text-align:' + align + ';font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ';white-space:' + (noWrap ? 'nowrap' : 'normal') + ';font-size:' + _styles2.default.font.size + 'px;line-height:' + _styles2.default.font.size / 10 + ';margin-top:0;margin-bottom:' + _styles2.default.spacing + 'px;}',
-      dynamic: [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10, _styles2.default.spacing]
+      styleId: '10965609',
+      css: 'p.__jsx-style-dynamic-selector{color:' + _styles2.default.colors[color] + ';text-align:' + align + ';font-family:' + (secondary ? _styles2.default.font.secondary : _styles2.default.font.primary) + ';white-space:' + (noWrap ? 'nowrap' : 'normal') + ';font-size:' + _styles2.default.font.size + 'px;line-height:' + _styles2.default.font.size / 10 + ';margin:0;}',
+      dynamic: [_styles2.default.colors[color], align, secondary ? _styles2.default.font.secondary : _styles2.default.font.primary, noWrap ? 'nowrap' : 'normal', _styles2.default.font.size, _styles2.default.font.size / 10]
     }),
     text || children
   );

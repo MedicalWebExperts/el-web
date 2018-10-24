@@ -14,29 +14,36 @@ var _react2 = _interopRequireDefault(_react);
 
 var _propTypes = require('prop-types');
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
 var _styles = require('../../styles');
 
 var _styles2 = _interopRequireDefault(_styles);
 
+var _media = require('../../utils/media');
+
+var _media2 = _interopRequireDefault(_media);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var propTypes = {
-  text: _propTypes2.default.string.isRequired,
-  outline: _propTypes2.default.bool,
-  type: _propTypes2.default.oneOf(['primary', 'secondary', 'success', 'warning', 'danger'])
+  text: _propTypes.string.isRequired,
+  outline: _propTypes.bool,
+  type: (0, _propTypes.oneOf)(['primary', 'secondary', 'success', 'warning', 'danger']),
+  styles: (0, _propTypes.shape)({}),
+  onClick: _propTypes.func.isRequired
 };
 
 var defaultProps = {
   outline: false,
-  type: 'primary'
+  type: 'primary',
+  styles: {}
 };
 
 var Button = function Button(_ref) {
   var text = _ref.text,
       outline = _ref.outline,
-      type = _ref.type;
+      type = _ref.type,
+      styles = _ref.styles,
+      onClick = _ref.onClick;
 
   // check type
   var buttonClassName = 'default';
@@ -66,16 +73,16 @@ var Button = function Button(_ref) {
   return _react2.default.createElement(
     'div',
     {
-      className: _style2.default.dynamic([['2640058647', [backgroundColor, _styles2.default.colors.white, _styles2.default.colors.transparent, _styles2.default.colors.primary, _styles2.default.colors.primary]]])
+      className: _style2.default.dynamic([['3340394992', [_media2.default.isMobile() || _media2.default.isTablet() ? '20px' : '0', backgroundColor, _styles2.default.colors.white, _styles2.default.colors.transparent, _styles2.default.colors.primary, _styles2.default.colors.primary]]])
     },
     _react2.default.createElement(_style2.default, {
-      styleId: '2640058647',
-      css: 'button.__jsx-style-dynamic-selector{text-align:center;padding:15px 30px;font-size:16px;cursor:pointer;font-weight:bold;border-radius:4px;border:none;outline:none;}button.__jsx-style-dynamic-selector:active,button.__jsx-style-dynamic-selector:focus{outline:none;}button.default.__jsx-style-dynamic-selector{background-color:' + backgroundColor + ';color:' + _styles2.default.colors.white + ';outline:none;}button.default.__jsx-style-dynamic-selector:hover{box-shadow:0 2px 6px rgba(0,0,0,0.3);}button.default.__jsx-style-dynamic-selector:active,button.default.__jsx-style-dynamic-selector:focus{box-shadow:0 2px 4px rgba(0,0,0,0.3);}button.outline.__jsx-style-dynamic-selector{background-color:' + _styles2.default.colors.transparent + ';border:solid 1px ' + _styles2.default.colors.primary + ';color:' + _styles2.default.colors.primary + ';}button.outline.__jsx-style-dynamic-selector:hover{opacity:0.8;}',
-      dynamic: [backgroundColor, _styles2.default.colors.white, _styles2.default.colors.transparent, _styles2.default.colors.primary, _styles2.default.colors.primary]
+      styleId: '3340394992',
+      css: 'div.__jsx-style-dynamic-selector{margin-bottom:' + (_media2.default.isMobile() || _media2.default.isTablet() ? '20px' : '0') + ';display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}button.__jsx-style-dynamic-selector{text-align:center;padding:11px 30px;font-size:14px;cursor:pointer;font-weight:bold;border-radius:4px;border:none;outline:none;width:100%;min-width:160px;}button.default.__jsx-style-dynamic-selector{background-color:' + backgroundColor + ';color:' + _styles2.default.colors.white + ';}button.default.__jsx-style-dynamic-selector:hover{box-shadow:0 2px 6px rgba(0,0,0,0.3);}button.default.__jsx-style-dynamic-selector:active,button.default.__jsx-style-dynamic-selector:focus{box-shadow:0 2px 4px rgba(0,0,0,0.3);}button.outline.__jsx-style-dynamic-selector{background-color:' + _styles2.default.colors.transparent + ';border:solid 1px ' + _styles2.default.colors.primary + ';color:' + _styles2.default.colors.primary + ';}button.outline.__jsx-style-dynamic-selector:hover{opacity:0.8;}',
+      dynamic: [_media2.default.isMobile() || _media2.default.isTablet() ? '20px' : '0', backgroundColor, _styles2.default.colors.white, _styles2.default.colors.transparent, _styles2.default.colors.primary, _styles2.default.colors.primary]
     }),
     _react2.default.createElement(
       'button',
-      { type: 'button', className: _style2.default.dynamic([['2640058647', [backgroundColor, _styles2.default.colors.white, _styles2.default.colors.transparent, _styles2.default.colors.primary, _styles2.default.colors.primary]]]) + ' ' + (buttonClassName || '')
+      { type: 'button', style: styles, onClick: onClick, className: _style2.default.dynamic([['3340394992', [_media2.default.isMobile() || _media2.default.isTablet() ? '20px' : '0', backgroundColor, _styles2.default.colors.white, _styles2.default.colors.transparent, _styles2.default.colors.primary, _styles2.default.colors.primary]]]) + ' ' + (buttonClassName || '')
       },
       text
     )
