@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/MedicalWebExperts/el-web/blob/master/el-web.png">
+  <img src="el-web.png">
 </p>
 
 # EL WEB
