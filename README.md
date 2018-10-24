@@ -1,4 +1,4 @@
-# ![Alt text](/src/assests/el-web.png?raw=true 'EL WEB')
+# ![EL WEB](src/assets/el-web.png?raw=true 'EL WEB')
 
 Just Another React Js Components Library.
 
