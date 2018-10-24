@@ -1,4 +1,4 @@
-# EL WEB
+# ![Alt text](/src/assests/el-web.png?raw=true 'EL WEB')
 
 Just Another React Js Components Library.
 
@@ -13,43 +13,43 @@ $ npm install git+https://bitbucket.org/NewWaveWeb/el-web.git#1.0.0 --save
 Then, import the components that you want to use:
 
 ```js
-  import { Title } from 'el-web';
+import { Title } from 'el-web';
 ```
-
 
 ### Misc
 
 - [Jira Task](https://newwaveweb.atlassian.net/browse/MIW-894)
 
-
 # How to Contribute
 
 ## Clone this repository
 
-``` bash
+```bash
 $ git clone git@bitbucket.org:NewWaveWeb/el-web.git
 ```
 
 ## Running the application with docker
+
 ### 1. Install Docker
 
 - [Install Docker](https://docs.docker.com/engine/installation/) in your machine for your corresponding OS.
 - Verify your installation. Run:
-``` bash
+
+```bash
 $ docker --version
 Docker version 17.03.0-ce, build 60ccb22
 ```
 
 ### 2. Build the application
 
-``` bash
+```bash
 $ cd el-web/
 $ docker-compose build
 ```
 
 ### 3. Running the application
 
-``` bash
+```bash
 $ docker-compose up
 ```
 
@@ -57,22 +57,25 @@ $ docker-compose up
 
 When the application loads, it automatically runs the tests inside the container with the --watchAll flag. But, if for some reason you want to run them manually, you can use this command:
 
-``` bash
+```bash
 $ docker-compose run elweb npm test
 ```
 
 To update the snapshots:
-``` bash
+
+```bash
 $ docker-compose run elweb npm test -- -u
 ```
 
 To watch the test suite:
-``` bash
+
+```bash
 $ docker-compose run elweb npm run test:watch
 ```
+
 #### Building the app to publish
 
-``` bash
+```bash
 $ docker-compose run elweb npm run build
 ```
 
@@ -80,13 +83,13 @@ $ docker-compose run elweb npm run build
 
 ### 1. Install the dependencies
 
-``` bash
+```bash
 $ npm install
 ```
 
 ### 2. Running Storybook
 
-``` bash
+```bash
 $ npm run storybook
 ```
 
@@ -94,29 +97,31 @@ This command will show a storybook instance at: [http://localhost:6006](http://l
 
 ### 3. Running Tests
 
-``` bash
+```bash
 $ npm test
 ```
 
 To update the snapshots:
-``` bash
+
+```bash
 $ npm test -- -u
 ```
 
 To watch the test suite:
-``` bash
+
+```bash
 $ npm run test:watch
 ```
 
 ### 4. Building the app to publish
 
-``` bash
+```bash
 $ npm run prepublish
 ```
 
 or:
 
-``` bash
+```bash
 $ npm run build
 ```
 
@@ -143,12 +148,12 @@ This project has configured a [storybook](https://storybook.js.org/). If you run
 If you want to add an story to the storybook, you can add it in the stories/ folder at the root of this repository.
 
 ```js
-  import React from 'react';
-  import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-  import { MyComponent } from '../src';
+import { MyComponent } from '../src';
 
-  storiesOf('MyComponent', module).add('default', () => <MyComponent />);
+storiesOf('MyComponent', module).add('default', () => <MyComponent />);
 ```
 
 Checkout the storybook [documentation](https://storybook.js.org/basics/guide-react/) for more examples.
