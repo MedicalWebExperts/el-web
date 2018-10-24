@@ -1,4 +1,4 @@
-# ![EL WEB](src/assets/el-web.png)
+# ![EL WEB](./src/assets/el-web.png)
 
 Just Another React Js Components Library.
 
