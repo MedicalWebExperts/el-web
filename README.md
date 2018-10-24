@@ -11,7 +11,7 @@ Just Another React Js Components Library.
 To use this library in your project, just install it using npm and the repository url.
 
 ```bash
-$ npm install git+https://bitbucket.org/NewWaveWeb/el-web.git#1.0.0 --save
+$ npm install el-web
 ```
 
 Then, import the components that you want to use:
@@ -20,16 +20,12 @@ Then, import the components that you want to use:
 import { Title } from 'el-web';
 ```
 
-### Misc
-
-- [Jira Task](https://newwaveweb.atlassian.net/browse/MIW-894)
-
 # How to Contribute
 
 ## Clone this repository
 
 ```bash
-$ git clone git@bitbucket.org:NewWaveWeb/el-web.git
+$ git clone git@github.com:MedicalWebExperts/el-web.git
 ```
 
 ## Running the application with docker
