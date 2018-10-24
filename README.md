@@ -1,5 +1,3 @@
-# EL WEB
-
 ![EL WEB](./el-web.png)
 
 Just Another React Js Components Library.
