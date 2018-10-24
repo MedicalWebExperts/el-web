@@ -1,5 +1,5 @@
-<p style="text-align: center;">
-  <img width="460" height="300" src="./el-web.png">
+<p align="center">
+  <img src="./el-web.png">
 </p>
 
 # EL WEB
