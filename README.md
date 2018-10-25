@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="el-web.png">
+  <img src="https://www.medicalwebexperts.com/blog/content/uploads/2018/10/el-web.png">
 </p>
 
 # EL WEB
