@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Input } from '../src';
+import { Input } from '..';
 
 export default () => {
   storiesOf('Input', module).add('Default', () => (

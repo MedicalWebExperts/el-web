@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { SearchForm } from '../src';
+import { SearchForm } from '..';
 
 const fields = [
   {

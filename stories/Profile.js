@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Profile } from '../src';
+import { Profile } from '..';
 import { fullProvider } from '../mocks/providers';
 import { fullLocation } from '../mocks/locations';
 

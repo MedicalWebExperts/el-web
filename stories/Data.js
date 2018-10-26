@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Data } from '../src';
+import { Data } from '..';
 
 const provider = {
   type: 'provider',

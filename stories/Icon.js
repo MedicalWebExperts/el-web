@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { faCoffee, faFutbol } from '@fortawesome/free-solid-svg-icons';
 
-import { Icon } from '../src';
+import { Icon } from '..';
 
 const customProps = {
   spin: true,

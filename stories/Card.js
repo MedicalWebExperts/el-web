@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Card, Avatar } from '../src';
+import { Card, Avatar } from '..';
 
 export default () => {
   storiesOf('Card', module).add('Card Default', () => (

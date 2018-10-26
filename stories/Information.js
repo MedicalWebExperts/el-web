@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Information } from '../src';
+import { Information } from '..';
 
 const data = [
   {

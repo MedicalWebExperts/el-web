@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { ListItem } from '../src';
+import { ListItem } from '..';
 import { basicProvider } from '../mocks/providers';
 import { basicLocation } from '../mocks/locations';
 
