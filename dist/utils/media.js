@@ -5,15 +5,27 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
   isMobile: function isMobile() {
-    return window.matchMedia('(max-width: 480px)').matches;
+    if (window) {
+      return window.matchMedia('(max-width: 480px)').matches;
+    }
+    return false;
   },
   isTablet: function isTablet() {
-    return window.matchMedia('(min-width:481px) and (max-width: 768px)').matches;
+    if (window) {
+      return window.matchMedia('(min-width:481px) and (max-width: 768px)').matches;
+    }
+    return false;
   },
   isTabletLanscape: function isTabletLanscape() {
-    return window.matchMedia('(min-width:769px) and (max-width: 992px)').matches;
+    if (window) {
+      return window.matchMedia('(min-width:769px) and (max-width: 992px)').matches;
+    }
+    return false;
   },
   isFullScreen: function isFullScreen() {
-    return window.matchMedia('(min-width:993px) and (max-width: 1200px)').matches;
+    if (window) {
+      return window.matchMedia('(min-width:993px) and (max-width: 1200px)').matches;
+    }
+    return true;
   }
 };
